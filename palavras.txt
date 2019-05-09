@@ -1,0 +1,50 @@
+IPTU           Imposto sobre imóveis urbanos
+BALEIA         Cetáceo
+SHAKESPEARE    Escritor inglês
+FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas
+CACHORRO       
+GATO           
+PÁSSARO        
+MESA           
+TECLADO        
+MONITOR        
+CADEIRA        
+CAIXA          
+MOUSE          
+BOLSA          
+CELULAR        
+CANETA         
+LÁPIS          
+LOUSA          
+JANELA         
+ÁRVORE         
+PORTA          
+VENTILADOR     
+LÂMPADA        
+ALUMÍNIO       
+ELEVADOR       
+MOINHO DE VENTO
+ALUNO          
+CAUDA          
+CONCHA         
+MÉXICO         
+BRASIL         
+CANADÁ         
+SOLDADO        
+MARTELO        
+CORAL          
+GARAGEM        
+PINÇA          
+FAÍSCA         
+BATALHA        
+EPITÁFIO       
+PRESIDENTE     
+GIZ            
+EGITO          
+VOLEIBOL       
+GAIVOTA        
+PACOTE         
+PROJÉTIL       
+CIANETO        
+INVÁLIDO       
+PRESENTE       
