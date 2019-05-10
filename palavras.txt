@@ -22,7 +22,7 @@ PORTA          Peça plana com que se fecha uma abertura, normalmente presa por 
 VENTILADOR     Dispositivo mecânico utilizado para converter energia mecânica de rotação
 LÂMPADA        Recipiente com líquido combustível e um pavio por onde é alimentada a chama que serve para iluminar
 ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas 
-MOINHO DE VENTOContração feita para triturar cereais 
+MOINHO DE VENTOConstrução feita para triturar cereais 
 ALUNO          Indivíduo que recebe instrução ou educação em estabelecimento de ensino ou não
 CAUDA          Apêndice pós-anal dos vertebrados, que encerra a porção terminal da coluna vertebral
 CONCHA         Espécie de colher grande, funda e de cabo longo, us. para servir alimentos líquidos ou pastosos
