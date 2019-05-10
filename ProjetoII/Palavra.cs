@@ -9,16 +9,13 @@ namespace ProjetoII
 {
 	class Palavra
 	{
-		string palavra;
-		string dica;
-
 		public Palavra(string p, string d)
 		{
-			palavra = p;
-			dica = d;
+			PalavraTexto = p;
+			DicaTexto = d;
 		}
 
-		public string PalavraTexto { get => palavra; }
-		public string DicaTexto { get => dica; }
+		public string PalavraTexto { get; }
+		public string DicaTexto { get; }
 	}
 }
