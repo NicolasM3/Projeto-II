@@ -15,6 +15,7 @@ namespace ProjetoII
 	{
 		VetorPalavra vetor = new VetorPalavra(100);
 		Random rand = new Random();
+		string palavraSorteada, dicaSorteada;
 
 		public FormForca()
 		{
@@ -43,7 +44,7 @@ namespace ProjetoII
 			{
 				string linhaLida = reader.ReadLine();
 				string palavra = linhaLida.Substring(0, 15);
-				string dica = linhaLida.Substring(16);
+				string dica = linhaLida.Substring(15);
 
 				var palavraDica = new Palavra(palavra, dica);
 
@@ -52,9 +53,16 @@ namespace ProjetoII
 			reader.Close();
 		}
 
-		private void button40_Click(object sender, EventArgs e)
+		private void btnIniciar_Click(object sender, EventArgs e)
 		{
-
+			int indiceEscolhido = rand.Next(50);
+			palavraSorteada = vetor.Dados[indiceEscolhido].PalavraTexto.Trim();
+			dicaSorteada = vetor.Dados[indiceEscolhido].DicaTexto.Trim();
+			if (chkDica.Checked)
+			{
+				// timer
+				txtDica.Text = dicaSorteada;
+			}
 		}
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

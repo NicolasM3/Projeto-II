@@ -78,15 +78,16 @@
 			this.button37 = new System.Windows.Forms.Button();
 			this.button38 = new System.Windows.Forms.Button();
 			this.button39 = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
+			this.lblDica = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.button40 = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.btnIniciar = new System.Windows.Forms.Button();
+			this.chkDica = new System.Windows.Forms.CheckBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
+			this.txtDica = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -628,15 +629,15 @@
 			this.button39.Text = "Ç";
 			this.button39.UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// lblDica
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(370, 330);
-			this.label2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(397, 24);
-			this.label2.TabIndex = 50;
-			this.label2.Text = "Dica: __________________________________";
+			this.lblDica.AutoSize = true;
+			this.lblDica.Location = new System.Drawing.Point(370, 312);
+			this.lblDica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.lblDica.Name = "lblDica";
+			this.lblDica.Size = new System.Drawing.Size(52, 24);
+			this.lblDica.TabIndex = 50;
+			this.lblDica.Text = "Dica:";
 			// 
 			// label3
 			// 
@@ -658,29 +659,29 @@
 			this.label4.TabIndex = 52;
 			this.label4.Text = "Erros: _ / 8";
 			// 
-			// button40
+			// btnIniciar
 			// 
-			this.button40.BackColor = System.Drawing.Color.White;
-			this.button40.Image = ((System.Drawing.Image)(resources.GetObject("button40.Image")));
-			this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button40.Location = new System.Drawing.Point(553, 362);
-			this.button40.Name = "button40";
-			this.button40.Size = new System.Drawing.Size(91, 38);
-			this.button40.TabIndex = 53;
-			this.button40.Text = "Iniciar";
-			this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.button40.UseVisualStyleBackColor = false;
-			this.button40.Click += new System.EventHandler(this.button40_Click);
+			this.btnIniciar.BackColor = System.Drawing.Color.White;
+			this.btnIniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciar.Image")));
+			this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnIniciar.Location = new System.Drawing.Point(553, 362);
+			this.btnIniciar.Name = "btnIniciar";
+			this.btnIniciar.Size = new System.Drawing.Size(91, 38);
+			this.btnIniciar.TabIndex = 53;
+			this.btnIniciar.Text = "Iniciar";
+			this.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnIniciar.UseVisualStyleBackColor = false;
+			this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
 			// 
-			// checkBox1
+			// chkDica
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(655, 368);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(109, 28);
-			this.checkBox1.TabIndex = 54;
-			this.checkBox1.Text = "Com dica";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.chkDica.AutoSize = true;
+			this.chkDica.Location = new System.Drawing.Point(655, 368);
+			this.chkDica.Name = "chkDica";
+			this.chkDica.Size = new System.Drawing.Size(109, 28);
+			this.chkDica.TabIndex = 54;
+			this.chkDica.Text = "Com dica";
+			this.chkDica.UseVisualStyleBackColor = true;
 			// 
 			// label5
 			// 
@@ -720,19 +721,30 @@
 			this.dlgAbrir.InitialDirectory = "..\\..\\";
 			this.dlgAbrir.Title = "Abrir lista de palavras";
 			// 
+			// txtDica
+			// 
+			this.txtDica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtDica.Location = new System.Drawing.Point(428, 309);
+			this.txtDica.Multiline = true;
+			this.txtDica.Name = "txtDica";
+			this.txtDica.ReadOnly = true;
+			this.txtDica.Size = new System.Drawing.Size(336, 47);
+			this.txtDica.TabIndex = 58;
+			// 
 			// FormForca
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(843, 444);
+			this.Controls.Add(this.txtDica);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.checkBox1);
-			this.Controls.Add(this.button40);
+			this.Controls.Add(this.chkDica);
+			this.Controls.Add(this.btnIniciar);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
+			this.Controls.Add(this.lblDica);
 			this.Controls.Add(this.button27);
 			this.Controls.Add(this.button28);
 			this.Controls.Add(this.button29);
@@ -784,7 +796,7 @@
 			this.Controls.Add(this.pictureBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "FormForca";
 			this.Text = "Jogo da Forca";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -852,15 +864,16 @@
 		private System.Windows.Forms.Button button37;
 		private System.Windows.Forms.Button button38;
 		private System.Windows.Forms.Button button39;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label lblDica;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Button button40;
-		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.Button btnIniciar;
+		private System.Windows.Forms.CheckBox chkDica;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.OpenFileDialog dlgAbrir;
+		private System.Windows.Forms.TextBox txtDica;
 	}
 }
 
