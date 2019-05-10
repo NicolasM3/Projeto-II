@@ -670,6 +670,7 @@
 			this.button40.Text = "Iniciar";
 			this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.button40.UseVisualStyleBackColor = false;
+			this.button40.Click += new System.EventHandler(this.button40_Click);
 			// 
 			// checkBox1
 			// 

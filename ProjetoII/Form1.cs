@@ -13,6 +13,9 @@ namespace ProjetoII
 {
 	public partial class FormForca : Form
 	{
+		VetorPalavra vetor = new VetorPalavra(100);
+		Random rand = new Random();
+
 		public FormForca()
 		{
 			InitializeComponent();
@@ -27,7 +30,8 @@ namespace ProjetoII
 				{
 					abriu = true;
 					LerArquivo(dlgAbrir.FileName);
-					txtNome.Focus();
+					//txtNome.Text = vetor.Dados[rand.Next(50)].PalavraTexto.Trim();
+					//txtNome.Text = "a";
 				}
 			}
 		}
@@ -40,7 +44,22 @@ namespace ProjetoII
 				string linhaLida = reader.ReadLine();
 				string palavra = linhaLida.Substring(0, 15);
 				string dica = linhaLida.Substring(16);
+
+				var palavraDica = new Palavra(palavra, dica);
+
+				vetor.InserirAposFim(palavraDica);
 			}
+			reader.Close();
+		}
+
+		private void button40_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
 		}
 	}
 }

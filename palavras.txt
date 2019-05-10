@@ -1,73 +1,50 @@
-IPTU           Imposto sobre imÛveis urbanos
-BALEIA         Cet·ceo
-SHAKESPEARE    Escritor inglÍs
-FERRAMENTA     Dispositivo que forneÁa vantagem mec‚nica para realizar tarefas
+ÔªøIPTU           Imposto sobre im√≥veis urbanos
+BALEIA         Cet√°ceo
+SHAKESPEARE    Escritor ingl√™s
+FERRAMENTA     Dispositivo que forne√ßa vantagem mec√¢nica para realizar tarefas
 CACHORRO       Animal domestico
 GATO           Animal domestico
-P¡SSARO        Considerado ordem da classe aves em nÌveis taxonÙmico
-MESA           mÛvel composto de um tampo horizontal
+P√ÅSSARO        Considerado ordem da classe aves em n√≠veis taxon√¥mico
+MESA           m√≥vel composto de um tampo horizontal
 TECLADO        Agrupamento de teclas
-MONITOR        IndivÌduo encarregado do ensino e da orientaÁ„o de esportes ou de certas disciplinas
-CADEIRA        PeÁa de mobÌlia composta de um assento individual e de um encosto
-CAIXA          Reserva em espÈcie que uma empresa mantÈm em suas dependÍncias para cobertura de pequenas despesas
-MOUSE          Dispositivo de entrada dotado de um a trÍs botıes
+MONITOR        Indiv√≠duo encarregado do ensino e da orienta√ß√£o de esportes ou de certas disciplinas
+CADEIRA        Pe√ßa de mob√≠lia composta de um assento individual e de um encosto
+CAIXA          Reserva em esp√©cie que uma empresa mant√©m em suas depend√™ncias para cobertura de pequenas despesas
+MOUSE          Dispositivo de entrada dotado de um a tr√™s bot√µes
 BOLSA          Pequeno saco para guardar o dinheiro em moedas
-CELULAR        Telefone mÛvel
-CANETA         UtensÌlio contendo tinta ou similar
-L¡PIS          Instrumento para escrever, desenhar ou riscar
-LOUSA          Quadro de ardÛsia de tamanhos variados, com moldura de madeira
-JANELA         Abertura ou v„o na parede externa de uma edificaÁ„o ou no corpo de um veÌculo
-¡RVORE         Vegetal lenhoso de porte muito vari·vel, que apresenta um caule principal
-PORTA          PeÁa plana com que se fecha uma abertura, normalmente presa por um dos lados ‡ parede
-VENTILADOR     Dispositivo mec‚nico utilizado para converter energia mec‚nica de rotaÁ„o
-L¬MPADA        Recipiente com lÌquido combustÌvel e um pavio por onde È alimentada a chama que serve para iluminar
-ALUMÕNIO       Elemento quÌmico usado em automÛveis, utensÌlios de cozinha, embalagens
+CELULAR        Telefone m√≥vel
+CANETA         Utens√≠lio contendo tinta ou similar
+L√ÅPIS          Instrumento para escrever, desenhar ou riscar
+LOUSA          Quadro de ard√≥sia de tamanhos variados, com moldura de madeira
+JANELA         Abertura ou v√£o na parede externa de uma edifica√ß√£o ou no corpo de um ve√≠culo
+√ÅRVORE         Vegetal lenhoso de porte muito vari√°vel, que apresenta um caule principal
+PORTA          Pe√ßa plana com que se fecha uma abertura, normalmente presa por um dos lados √† parede
+VENTILADOR     Dispositivo mec√¢nico utilizado para converter energia mec√¢nica de rota√ß√£o
+L√ÇMPADA        Recipiente com l√≠quido combust√≠vel e um pavio por onde √© alimentada a chama que serve para iluminar
+ALUM√çNIO       Elemento qu√≠mico usado em autom√≥veis, utens√≠lios de cozinha, embalagens
 ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas 
-MOINHO DE VENTOContraÁ„o feita para triturar cereais 
-ALUNO          IndivÌduo que recebe instruÁ„o ou educaÁ„o em estabelecimento de ensino ou n„o
-CAUDA          ApÍndice pÛs-anal dos vertebrados, que encerra a porÁ„o terminal da coluna vertebral
-CONCHA         EspÈcie de colher grande, funda e de cabo longo, us. para servir alimentos lÌquidos ou pastosos
-M…XICO         PaÌs da AmÈrica do Norte, localizado ao norte da Guatemala e do Belize
-BRASIL         Maior Rep˙blica Federativa da AmÈrica do sul
-CANAD¡         Antiga colÙnia inglesa no hemisfÈrio norte do globo
-SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das ForÁas Armadas
-MARTELO        Ferramenta provida de uma cabeÁa de ferro ou outro material forte e pesado, presa a um cabo
-CORAL          Cnid·rios da classe Anthozoa, que podem constituir colÙnias coloridas 
+MOINHO DE VENTOContra√ß√£o feita para triturar cereais 
+ALUNO          Indiv√≠duo que recebe instru√ß√£o ou educa√ß√£o em estabelecimento de ensino ou n√£o
+CAUDA          Ap√™ndice p√≥s-anal dos vertebrados, que encerra a por√ß√£o terminal da coluna vertebral
+CONCHA         Esp√©cie de colher grande, funda e de cabo longo, us. para servir alimentos l√≠quidos ou pastosos
+M√âXICO         Pa√≠s da Am√©rica do Norte, localizado ao norte da Guatemala e do Belize
+BRASIL         Maior Rep√∫blica Federativa da Am√©rica do sul
+CANAD√Å         Antiga col√¥nia inglesa no hemisf√©rio norte do globo
+SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das For√ßas Armadas
+MARTELO        Ferramenta provida de uma cabe√ßa de ferro ou outro material forte e pesado, presa a um cabo
+CORAL          Cnid√°rios da classe Anthozoa, que podem constituir col√¥nias coloridas 
 GARAGEM        Moral forte perante o perigo, os riscos; bravura, intrepidez
-PIN«A          Instrumento constituÌdo de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo
-FAÕSCA         Fragmento luminoso que se desprende de um corpo em brasa ou resultante do atrito de dois corpos
-BATALHA        combate entre forÁas oponentes, em terra, no ar e/ou no mar
-EPIT¡FIO       InscriÁ„o sobre l·pides tumulares ou monumentos funer·rios
-PRESIDENTE     Aquele que tem a funÁ„o de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, concÌlio
-GIZ            Calc·rio reduzido a pÛ e moldado em forma de bastonete, usado para escrever, desenhar, riscar.
-EGITO          CivilizaÁ„o do Antigo Oriente PrÛximo do Norte de ¡frica, concentrada ao longo ao do rio Nilo
+PIN√áA          Instrumento constitu√≠do de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo
+FA√çSCA         Fragmento luminoso que se desprende de um corpo em brasa ou resultante do atrito de dois corpos
+BATALHA        combate entre for√ßas oponentes, em terra, no ar e/ou no mar
+EPIT√ÅFIO       Inscri√ß√£o sobre l√°pides tumulares ou monumentos funer√°rios
+PRESIDENTE     Aquele que tem a fun√ß√£o de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, conc√≠lio
+GIZ            Calc√°rio reduzido a p√≥ e moldado em forma de bastonete, usado para escrever, desenhar, riscar.
+EGITO          Civiliza√ß√£o do Antigo Oriente Pr√≥ximo do Norte de √Åfrica, concentrada ao longo ao do rio Nilo
 VOLEIBOL       Esporte disputado entre duas equipes , em quadra retangular, dividida ao meio por uma rede
-GAIVOTA        DesignaÁ„o dada a v·rias aves marinhas palmÌpedes da famÌlia dos larÌdeos
+GAIVOTA        Designa√ß√£o dada a v√°rias aves marinhas palm√≠pedes da fam√≠lia dos lar√≠deos
 PACOTE         Pequeno embrulho
-PROJ…TIL       DescriÁ„o escrita e detalhada de um empreendimento a ser realizado no futuro
-CIANETO        Nome do composto quÌmico que contÈm o grupo ciano, altamente tÛxico
-INV¡LIDO       Aquele que, por deficiÍncia fÌsica ou mental, se tornou incapaz de levar uma vida profissional.
-PRESENTE       Que se encontra ou est· ‡ vista em determinado lugar
-TUBAR√O
-PROTESTO
-EDIFÕCIO
-AVI√O
-TRIP…
-TREM
-ALGOD√O
-SALM√O
-CABIDE
-LIVRARIA
-GAL¡XIA
-UVA
-MA«√
-P RA
-MANGA
-CORTINA
-CALEND¡RIO
-REL”GIO
-AMPULHETA
-INFRAVERMELHO
-BARRIL
-SORO
-LUVA
+PROJ√âTIL       Descri√ß√£o escrita e detalhada de um empreendimento a ser realizado no futuro
+CIANETO        Nome do composto qu√≠mico que cont√©m o grupo ciano, altamente t√≥xico
+INV√ÅLIDO       Aquele que, por defici√™ncia f√≠sica ou mental, se tornou incapaz de levar uma vida profissional.
+PRESENTE       Que se encontra ou est√° √† vista em determinado lugar
