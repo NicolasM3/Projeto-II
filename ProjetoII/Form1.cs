@@ -58,10 +58,27 @@ namespace ProjetoII
 			int indiceEscolhido = rand.Next(50);
 			palavraSorteada = vetor.Dados[indiceEscolhido].PalavraTexto.Trim();
 			dicaSorteada = vetor.Dados[indiceEscolhido].DicaTexto.Trim();
+
+			lblPontos.Text = "Pontos: 0";
+			lblErros.Text = "Erros: 0 / 8";
+
 			if (chkDica.Checked)
 			{
+				lblTimer.Text = "120s";
 				// timer
 				txtDica.Text = dicaSorteada;
+			}
+		}
+
+		private void TxtNome_TextChanged(object sender, EventArgs e)
+		{
+			if (txtNome.Text == "")
+			{
+				btnIniciar.Enabled = false;
+			}
+			else
+			{
+				btnIniciar.Enabled = true;
 			}
 		}
 

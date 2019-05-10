@@ -79,15 +79,32 @@
 			this.button38 = new System.Windows.Forms.Button();
 			this.button39 = new System.Windows.Forms.Button();
 			this.lblDica = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
+			this.lblPontos = new System.Windows.Forms.Label();
+			this.lblErros = new System.Windows.Forms.Label();
 			this.btnIniciar = new System.Windows.Forms.Button();
 			this.chkDica = new System.Windows.Forms.CheckBox();
-			this.label5 = new System.Windows.Forms.Label();
+			this.lblTxtTimer = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
 			this.txtDica = new System.Windows.Forms.TextBox();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.lblTimer = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -96,6 +113,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -200,6 +218,7 @@
 			this.txtNome.Name = "txtNome";
 			this.txtNome.Size = new System.Drawing.Size(285, 29);
 			this.txtNome.TabIndex = 10;
+			this.txtNome.TextChanged += new System.EventHandler(this.TxtNome_TextChanged);
 			// 
 			// button1
 			// 
@@ -639,29 +658,30 @@
 			this.lblDica.TabIndex = 50;
 			this.lblDica.Text = "Dica:";
 			// 
-			// label3
+			// lblPontos
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(370, 368);
-			this.label3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(118, 24);
-			this.label3.TabIndex = 51;
-			this.label3.Text = "Pontos: ____";
+			this.lblPontos.AutoSize = true;
+			this.lblPontos.Location = new System.Drawing.Point(370, 368);
+			this.lblPontos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.lblPontos.Name = "lblPontos";
+			this.lblPontos.Size = new System.Drawing.Size(118, 24);
+			this.lblPontos.TabIndex = 51;
+			this.lblPontos.Text = "Pontos: ____";
 			// 
-			// label4
+			// lblErros
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(370, 406);
-			this.label4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(100, 24);
-			this.label4.TabIndex = 52;
-			this.label4.Text = "Erros: _ / 8";
+			this.lblErros.AutoSize = true;
+			this.lblErros.Location = new System.Drawing.Point(370, 406);
+			this.lblErros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.lblErros.Name = "lblErros";
+			this.lblErros.Size = new System.Drawing.Size(100, 24);
+			this.lblErros.TabIndex = 52;
+			this.lblErros.Text = "Erros: _ / 8";
 			// 
 			// btnIniciar
 			// 
 			this.btnIniciar.BackColor = System.Drawing.Color.White;
+			this.btnIniciar.Enabled = false;
 			this.btnIniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciar.Image")));
 			this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnIniciar.Location = new System.Drawing.Point(553, 362);
@@ -683,15 +703,15 @@
 			this.chkDica.Text = "Com dica";
 			this.chkDica.UseVisualStyleBackColor = true;
 			// 
-			// label5
+			// lblTxtTimer
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(550, 406);
-			this.label5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(211, 24);
-			this.label5.TabIndex = 55;
-			this.label5.Text = "Tempo restante: _____s";
+			this.lblTxtTimer.AutoSize = true;
+			this.lblTxtTimer.Location = new System.Drawing.Point(553, 406);
+			this.lblTxtTimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.lblTxtTimer.Name = "lblTxtTimer";
+			this.lblTxtTimer.Size = new System.Drawing.Size(147, 24);
+			this.lblTxtTimer.TabIndex = 55;
+			this.lblTxtTimer.Text = "Tempo restante:";
 			// 
 			// label6
 			// 
@@ -731,19 +751,195 @@
 			this.txtDica.Size = new System.Drawing.Size(336, 47);
 			this.txtDica.TabIndex = 58;
 			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column15});
+			this.dataGridView1.Location = new System.Drawing.Point(374, 271);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
+			this.dataGridView1.RowHeadersVisible = false;
+			this.dataGridView1.Size = new System.Drawing.Size(390, 32);
+			this.dataGridView1.TabIndex = 59;
+			// 
+			// Column1
+			// 
+			this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column1.HeaderText = "_";
+			this.Column1.MinimumWidth = 20;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "_";
+			this.Column2.MinimumWidth = 20;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column3
+			// 
+			this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column3.HeaderText = "_";
+			this.Column3.MinimumWidth = 20;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column4
+			// 
+			this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column4.HeaderText = "_";
+			this.Column4.MinimumWidth = 20;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column5
+			// 
+			this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column5.HeaderText = "_";
+			this.Column5.MinimumWidth = 20;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column6
+			// 
+			this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column6.HeaderText = "_";
+			this.Column6.MinimumWidth = 20;
+			this.Column6.Name = "Column6";
+			this.Column6.ReadOnly = true;
+			this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column7
+			// 
+			this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column7.HeaderText = "_";
+			this.Column7.MinimumWidth = 20;
+			this.Column7.Name = "Column7";
+			this.Column7.ReadOnly = true;
+			this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column8
+			// 
+			this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column8.HeaderText = "_";
+			this.Column8.MinimumWidth = 20;
+			this.Column8.Name = "Column8";
+			this.Column8.ReadOnly = true;
+			this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column9
+			// 
+			this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column9.HeaderText = "_";
+			this.Column9.MinimumWidth = 20;
+			this.Column9.Name = "Column9";
+			this.Column9.ReadOnly = true;
+			this.Column9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column10
+			// 
+			this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column10.HeaderText = "_";
+			this.Column10.MinimumWidth = 20;
+			this.Column10.Name = "Column10";
+			this.Column10.ReadOnly = true;
+			this.Column10.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column11
+			// 
+			this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column11.HeaderText = "_";
+			this.Column11.MinimumWidth = 20;
+			this.Column11.Name = "Column11";
+			this.Column11.ReadOnly = true;
+			this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column12
+			// 
+			this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column12.HeaderText = "_";
+			this.Column12.MinimumWidth = 20;
+			this.Column12.Name = "Column12";
+			this.Column12.ReadOnly = true;
+			this.Column12.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column13
+			// 
+			this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column13.HeaderText = "_";
+			this.Column13.MinimumWidth = 20;
+			this.Column13.Name = "Column13";
+			this.Column13.ReadOnly = true;
+			this.Column13.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column14
+			// 
+			this.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column14.HeaderText = "_";
+			this.Column14.MinimumWidth = 20;
+			this.Column14.Name = "Column14";
+			this.Column14.ReadOnly = true;
+			this.Column14.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// Column15
+			// 
+			this.Column15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column15.HeaderText = "_";
+			this.Column15.MinimumWidth = 20;
+			this.Column15.Name = "Column15";
+			this.Column15.ReadOnly = true;
+			this.Column15.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			// 
+			// lblTimer
+			// 
+			this.lblTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblTimer.AutoSize = true;
+			this.lblTimer.Location = new System.Drawing.Point(715, 407);
+			this.lblTimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.lblTimer.Name = "lblTimer";
+			this.lblTimer.Size = new System.Drawing.Size(49, 24);
+			this.lblTimer.TabIndex = 60;
+			this.lblTimer.Text = "___s";
+			// 
 			// FormForca
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(843, 444);
+			this.Controls.Add(this.lblTimer);
+			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.txtDica);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label5);
+			this.Controls.Add(this.lblTxtTimer);
 			this.Controls.Add(this.chkDica);
 			this.Controls.Add(this.btnIniciar);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.lblErros);
+			this.Controls.Add(this.lblPontos);
 			this.Controls.Add(this.lblDica);
 			this.Controls.Add(this.button27);
 			this.Controls.Add(this.button28);
@@ -808,6 +1004,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -865,15 +1062,32 @@
 		private System.Windows.Forms.Button button38;
 		private System.Windows.Forms.Button button39;
 		private System.Windows.Forms.Label lblDica;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label lblPontos;
+		private System.Windows.Forms.Label lblErros;
 		private System.Windows.Forms.Button btnIniciar;
 		private System.Windows.Forms.CheckBox chkDica;
-		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label lblTxtTimer;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.OpenFileDialog dlgAbrir;
 		private System.Windows.Forms.TextBox txtDica;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+		private System.Windows.Forms.Label lblTimer;
 	}
 }
 
