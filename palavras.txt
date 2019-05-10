@@ -2,52 +2,52 @@ IPTU           Imposto sobre imóveis urbanos
 BALEIA         Cetáceo
 SHAKESPEARE    Escritor inglês
 FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas
-CACHORRO       
-GATO           
-PÁSSARO        
-MESA           
-TECLADO        
-MONITOR        
-CADEIRA        
-CAIXA          
-MOUSE          
-BOLSA          
-CELULAR        
-CANETA         
-LÁPIS          
-LOUSA          
-JANELA         
-ÁRVORE         
-PORTA          
-VENTILADOR     
-LÂMPADA        
-ALUMÍNIO       
-ELEVADOR       
-MOINHO DE VENTO
-ALUNO          
-CAUDA          
-CONCHA         
-MÉXICO         
-BRASIL         
-CANADÁ         
-SOLDADO        
-MARTELO        
-CORAL          
-GARAGEM        
-PINÇA          
-FAÍSCA         
-BATALHA        
-EPITÁFIO       
-PRESIDENTE     
-GIZ            
-EGITO          
-VOLEIBOL       
-GAIVOTA        
-PACOTE         
-PROJÉTIL       
-CIANETO        
-INVÁLIDO       
-PRESENTE       
+CACHORRO       Animal domestico
+GATO           Animal domestico
+PÁSSARO        Considerado ordem da classe aves em níveis taxonômico
+MESA           móvel composto de um tampo horizontal
+TECLADO        Agrupamento de teclas
+MONITOR        Indivíduo encarregado do ensino e da orientação de esportes ou de certas disciplinas
+CADEIRA        Peça de mobília composta de um assento individual e de um encosto
+CAIXA          Reserva em espécie que uma empresa mantém em suas dependências para cobertura de pequenas despesas
+MOUSE          Dispositivo de entrada dotado de um a três botões
+BOLSA          Pequeno saco para guardar o dinheiro em moedas
+CELULAR        Telefone móvel
+CANETA         Utensílio contendo tinta ou similar
+LÁPIS          Instrumento para escrever, desenhar ou riscar
+LOUSA          Quadro de ardósia de tamanhos variados, com moldura de madeira
+JANELA         Abertura ou vão na parede externa de uma edificação ou no corpo de um veículo
+ÁRVORE         Vegetal lenhoso de porte muito variável, que apresenta um caule principal
+PORTA          Peça plana com que se fecha uma abertura, normalmente presa por um dos lados à parede
+VENTILADOR     Dispositivo mecânico utilizado para converter energia mecânica de rotação
+LÂMPADA        Recipiente com líquido combustível e um pavio por onde é alimentada a chama que serve para iluminar
+ALUMÍNIO       Elemento químico usado em automóveis, utensílios de cozinha, embalagens
+ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas 
+MOINHO DE VENTOContração feita para triturar cereais 
+ALUNO          Indivíduo que recebe instrução ou educação em estabelecimento de ensino ou não
+CAUDA          Apêndice pós-anal dos vertebrados, que encerra a porção terminal da coluna vertebral
+CONCHA         Espécie de colher grande, funda e de cabo longo, us. para servir alimentos líquidos ou pastosos
+MÉXICO         País da América do Norte, localizado ao norte da Guatemala e do Belize
+BRASIL         Maior República Federativa da América do sul
+CANADÁ         Antiga colônia inglesa no hemisfério norte do globo
+SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das Forças Armadas
+MARTELO        Ferramenta provida de uma cabeça de ferro ou outro material forte e pesado, presa a um cabo
+CORAL          Cnidários da classe Anthozoa, que podem constituir colônias coloridas 
+GARAGEM        Moral forte perante o perigo, os riscos; bravura, intrepidez
+PINÇA          Instrumento constituído de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo
+FAÍSCA         Fragmento luminoso que se desprende de um corpo em brasa ou resultante do atrito de dois corpos
+BATALHA        combate entre forças oponentes, em terra, no ar e/ou no mar
+EPITÁFIO       Inscrição sobre lápides tumulares ou monumentos funerários
+PRESIDENTE     Aquele que tem a função de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, concílio
+GIZ            Calcário reduzido a pó e moldado em forma de bastonete, usado para escrever, desenhar, riscar.
+EGITO          Civilização do Antigo Oriente Próximo do Norte de África, concentrada ao longo ao do rio Nilo
+VOLEIBOL       Esporte disputado entre duas equipes , em quadra retangular, dividida ao meio por uma rede
+GAIVOTA        Designação dada a várias aves marinhas palmípedes da família dos larídeos
+PACOTE         Pequeno embrulho
+PROJÉTIL       Descrição escrita e detalhada de um empreendimento a ser realizado no futuro
+CIANETO        Nome do composto químico que contém o grupo ciano, altamente tóxico
+INVÁLIDO       Aquele que, por deficiência física ou mental, se tornou incapaz de levar uma vida profissional.
+PRESENTE       Que se encontra ou está à vista em determinado lugar
 TUBARÃO
 PROTESTO
 EDIFÍCIO
