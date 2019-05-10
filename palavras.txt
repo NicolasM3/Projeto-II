@@ -1,4 +1,4 @@
-IPTU           Imposto sobre imóveis urbanos
+﻿IPTU           Imposto sobre imóveis urbanos
 BALEIA         Cetáceo
 SHAKESPEARE    Escritor inglês
 FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas
@@ -65,3 +65,36 @@ INFRAVERMELHO  Tipo de radiação eletromagnética que apresenta frequência men
 BARRIL         Recipiente de madeira destinado a conservar ou transportar algo
 SORO           Solução de substância orgânica ou mineral usada na hidratação ou alimentação
 LUVA           Vestimenta que cobre as mãos, punho e parte do antebraço
+INJEÇÂO        Ato de injetar sob pressão líquido ou gás no organismo com o auxílio de seringa e agulha
+ROUPA          Objeto usado para cobrir certas partes do corpo    
+FERRAMENTA     Apetrecho de metal usado em artes e ofícios
+MARFIM         Dente do elefante, antes de transformado em artefato
+NUCLEAR        Referente a um núcleo
+ESPUMA         Conjunto de minúsculas bolhas 
+CARTAS         Meio escrito de comunicação
+FUNIL          Utensílio em forma de cone usado para despejar líquidos em recipientes de boca estreita
+BARBEADOR      Lânima usada para barbear
+PADRASTO       Homem em relação aos filhos anteriores da mulher
+DETETIVE       Agente de investigação
+BROTO          Saliência que dá origem a um novo indivíduo
+LIVRO          Coleção de folhas de papel, reunidas em cadernos cujos dorsos são unidos 
+COTOVELO       Região na parte posterior da articulação do braço
+DESTILAR       Processo químico no qual o elemento vair sair em gotas    
+RIFLE          Carabina de cano longo
+ANDORINHA      Ave migratória comum em Campinas
+GRAFITE        Rabisco ou desenho simplificado, iniciais do autor, ou feitos em paredes e muros
+CRUZ VERMELHA  Organização internacional, com objetivo de prestar socorro às pessoas vítimas de guerras
+PADRE          Homem que recebeu ordenação sacerdotal
+POESIA         Composição poética de pequena extensão 
+PORCO ESPINHO  Roedores de corpo atarracado, patas curtas e longos espinhos protetores
+ESTRIBO        Espécie de aro de metal, madeira ou sola que pende de cada lado da sela 
+CEBOLA         Planta , de folhas compridas e cilíndricas, cujo bolbo é usado na alimentação
+GIRASSOL       Flor que segue uma estrela
+LIXEIRA        Recipiente de forma e tamanho variados, móvel ou fixo, onde se reúne o lixo
+BIGODES        Homônimo a "grandes deuses" em inglês
+PÁ             Utensílio que consiste numa grande colher,adaptado a um cabo usada para escavar 
+CONDE          Na Idade Média e na Moderna, aquele que detinha o comando militar de um território
+CABO           Graduação hierárquica militar imediatamente superior ao soldado
+PAPAGAIO       Ave que memoriza e repete o que ouve 
+SINO           Instrumento obcônico, oco, normalmente feito de bronze
+CATEDRAL       Templo cristão em que se encontra a sede de um bispo
