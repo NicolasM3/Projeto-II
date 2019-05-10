@@ -1,4 +1,4 @@
-﻿IPTU           Imposto sobre imóveis urbanos
+IPTU           Imposto sobre imóveis urbanos
 BALEIA         Cetáceo
 SHAKESPEARE    Escritor inglês
 FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas
@@ -21,13 +21,11 @@ JANELA         Abertura ou vão na parede externa de uma edificação ou no corp
 PORTA          Peça plana com que se fecha uma abertura, normalmente presa por um dos lados à parede
 VENTILADOR     Dispositivo mecânico utilizado para converter energia mecânica de rotação
 LÂMPADA        Recipiente com líquido combustível e um pavio por onde é alimentada a chama que serve para iluminar
-ALUMÍNIO       Elemento químico usado em automóveis, utensílios de cozinha, embalagens
 ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas 
 MOINHO DE VENTOContração feita para triturar cereais 
 ALUNO          Indivíduo que recebe instrução ou educação em estabelecimento de ensino ou não
 CAUDA          Apêndice pós-anal dos vertebrados, que encerra a porção terminal da coluna vertebral
 CONCHA         Espécie de colher grande, funda e de cabo longo, us. para servir alimentos líquidos ou pastosos
-MÉXICO         País da América do Norte, localizado ao norte da Guatemala e do Belize
 BRASIL         Maior República Federativa da América do sul
 CANADÁ         Antiga colônia inglesa no hemisfério norte do globo
 SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das Forças Armadas
@@ -35,7 +33,6 @@ MARTELO        Ferramenta provida de uma cabeça de ferro ou outro material fort
 CORAL          Cnidários da classe Anthozoa, que podem constituir colônias coloridas 
 GARAGEM        Moral forte perante o perigo, os riscos; bravura, intrepidez
 PINÇA          Instrumento constituído de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo
-FAÍSCA         Fragmento luminoso que se desprende de um corpo em brasa ou resultante do atrito de dois corpos
 BATALHA        combate entre forças oponentes, em terra, no ar e/ou no mar
 EPITÁFIO       Inscrição sobre lápides tumulares ou monumentos funerários
 PRESIDENTE     Aquele que tem a função de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, concílio
@@ -44,7 +41,27 @@ EGITO          Civilização do Antigo Oriente Próximo do Norte de África, con
 VOLEIBOL       Esporte disputado entre duas equipes , em quadra retangular, dividida ao meio por uma rede
 GAIVOTA        Designação dada a várias aves marinhas palmípedes da família dos larídeos
 PACOTE         Pequeno embrulho
-PROJÉTIL       Descrição escrita e detalhada de um empreendimento a ser realizado no futuro
 CIANETO        Nome do composto químico que contém o grupo ciano, altamente tóxico
-INVÁLIDO       Aquele que, por deficiência física ou mental, se tornou incapaz de levar uma vida profissional.
+INVÁLIDO       Aquele que, por deficiência física ou mental, se tornou incapaz de levar uma vida profissional
 PRESENTE       Que se encontra ou está à vista em determinado lugar
+TUBARÃO        São peixes , grandes predadores e embora de discutida qualidade, sua carne é muito consumida
+PROTESTO       Ato ou efeito de reclamar; queixa, reclamação
+AVIÃO          Aeronave de propulsão a motor, cuja sustentação no ar é assegurada por meio de asas
+TREM           Série de vagões engatados entre si e puxados por uma locomotiva
+ALGODÃO        Fibra branca que cresce a volta das sementes de algumas espécies, utilizada na área têxtil
+SALMÃO         Peixe do Atlântico norte,com carne que possui excelente sabor e alto valor comercial
+CABIDE         Gancho preso a uma parede e em que se penduram roupas, chapéus, toalhas, bengalas etc
+LIVRARIA       Estabelecimento com livros
+GALÁXIA        Sistema estelar isolado no espaço cósmico, ao qual pertencem o Sol e mais de cem bilhões de corpos 
+UVA            Fruto utilizado frequentemente para produzir doce, vinho e passas
+MAÇA           Arma formada por um cabo comprido, com uma pesada bola de ferro dentada
+PERA           Fruto da pereira
+MANGA          Parte da vestimenta, de forma e dimensões variáveis, e que recobre o braço total ou parcialmente
+CORTINA        Peça de pano ou de outro material usada para proteger ou adornar janelas, portas, leitos
+CALENDÁRIO     Sistema para contagem e agrupamento de dias, meses, anos
+RELÓGIO        Maquinismo ou aparelho que serve para marcar o tempo e indicar as horas
+AMPULHETA      Artefato de medir o tempo constituído por um recipiente originalmente de vidro preenchido de areia
+INFRAVERMELHO  Tipo de radiação eletromagnética que apresenta frequência menor que a da luz visível ao olho humano
+BARRIL         Recipiente de madeira destinado a conservar ou transportar algo
+SORO           Solução de substância orgânica ou mineral usada na hidratação ou alimentação
+LUVA           Vestimenta que cobre as mãos, punho e parte do antebraço
