@@ -16,8 +16,11 @@ namespace ProjetoII
 		VetorPalavra vetor = new VetorPalavra(100);
 		Random rand = new Random();
 		string palavraSorteada, dicaSorteada;
+        char[] VLetrasPalavra, LetrasTestadas;
+        int qntLetrasTestadas = 0, erros = 0, pontos = 0;
 
-		public FormForca()
+
+        public FormForca()
 		{
 			InitializeComponent();
 		}
@@ -31,9 +34,8 @@ namespace ProjetoII
 				{
 					abriu = true;
 					LerArquivo(dlgAbrir.FileName);
-					//txtNome.Text = vetor.Dados[rand.Next(50)].PalavraTexto.Trim();
-					//txtNome.Text = "a";
-				}
+                    //txtNome.Text = vetor.Dados[rand.Next(100)].PalavraTexto.Trim();
+                }
 			}
 		}
 
@@ -55,9 +57,21 @@ namespace ProjetoII
 
 		private void btnIniciar_Click(object sender, EventArgs e)
 		{
-			int indiceEscolhido = rand.Next(50);
+			int indiceEscolhido = rand.Next(100);
 			palavraSorteada = vetor.Dados[indiceEscolhido].PalavraTexto.Trim();
 			dicaSorteada = vetor.Dados[indiceEscolhido].DicaTexto.Trim();
+
+
+            VLetrasPalavra = new char[palavraSorteada.Length];
+            LetrasTestadas = new char[39];
+            int i = 0;
+            foreach (char letra in palavraSorteada)
+            {
+                VLetrasPalavra[i] = letra;
+                i++;
+            }
+            dgvPalavraSecreta.Width = 15*26 - (26 * (15 - i));      // define o tamanho do dataGrid para o número de letras necessárias
+
 
 			lblPontos.Text = "Pontos: 0";
 			lblErros.Text = "Erros: 0 / 8";
@@ -82,9 +96,37 @@ namespace ProjetoII
 			}
 		}
 
-		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
 
 		}
-	}
+
+        private void Verificar(char tentativa)
+        {
+            bool achou = false;
+            LetrasTestadas[qntLetrasTestadas] = tentativa; 
+            for(int i = 0; i < palavraSorteada.Length; i++)
+            {
+                if(VLetrasPalavra[i] == Char.ToUpper(tentativa))   
+                {
+                    dgvPalavraSecreta.Rows[0].Cells[0].Value = tentativa;
+                    pontos++;
+                    achou = true;
+                }
+            }
+            if (!achou)
+            {
+                pontos--;
+                erros++;
+            }
+            qntLetrasTestadas++;
+        }
+
+
+        private void btnA_Click(object sender, EventArgs e)
+        {
+            Verificar('a');
+        }
+
+    }
 }

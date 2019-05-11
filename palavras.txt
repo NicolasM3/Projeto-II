@@ -77,7 +77,7 @@ BARBEADOR      Lânima usada para barbear
 PADRASTO       Homem em relação aos filhos anteriores da mulher
 DETETIVE       Agente de investigação
 BROTO          Saliência que dá origem a um novo indivíduo
-LIVRO          Coleção de folhas de papel, reunidas em cadernos cujos dorsos são unidos 
+LIVRO          Coleção de folhas de papel, reunidas em cadernos, cujos dorsos são unidos 
 COTOVELO       Região na parte posterior da articulação do braço
 DESTILAR       Processo químico no qual o elemento vair sair em gotas    
 RIFLE          Carabina de cano longo
