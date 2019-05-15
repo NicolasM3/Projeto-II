@@ -17,7 +17,7 @@ namespace ProjetoII
 		Random rand = new Random();
 		string palavraSorteada, dicaSorteada;
         char[] VLetrasPalavra, LetrasTestadas, acertos;
-        int qntLetrasTestadas = 0, erros = 0, pontos = 0, segundos = 122;
+        int qntLetrasTestadas = 0, erros = 0, pontos = 0, segundos = 120;
 		bool iniciou;
 
 
@@ -63,12 +63,20 @@ namespace ProjetoII
 			palavraSorteada = vetor.Dados[indiceEscolhido].PalavraTexto.Trim();
 			dicaSorteada = vetor.Dados[indiceEscolhido].DicaTexto.Trim();
 
-
 			VLetrasPalavra = new char[palavraSorteada.Length];
 			LetrasTestadas = new char[39];
 			acertos = new char[palavraSorteada.Length];
 
-			int i = 0;
+            pontos = 0;
+            erros = 0;
+            lblPontos.Text = $"Pontos: {pontos}";
+            lblErros.Text = $"Erros: {erros} / 8";
+            txtDica.Text = " ";
+            AtualizarImagens();
+            segundos = 120;
+
+
+            int i = 0;
 			foreach (char letra in palavraSorteada)
 			{
 				VLetrasPalavra[i] = letra;
@@ -77,16 +85,17 @@ namespace ProjetoII
 			}
 			dgvPalavraSecreta.Width = 15 * 26 - (26 * (15 - i));      // define o tamanho do dataGrid para o número de letras necessárias
 
-
-			lblPontos.Text = "Pontos: 0";
-			lblErros.Text = "Erros: 0 / 8";
-
 			if (chkDica.Checked)
 			{
 				txtDica.Text = dicaSorteada;
 				timerJogo.Start();
 			}
 		}
+
+        private void IniciandoVariaveis()
+        {
+
+        }
 
 		private void VerificarBotao(object sender, EventArgs e)
 		{
@@ -194,6 +203,7 @@ namespace ProjetoII
 		{
 			iniciou = false;
 			MessageBox.Show("Perdeu");
+            timerJogo.Stop();
 			//forca9.Visible = true;
 		}
 
