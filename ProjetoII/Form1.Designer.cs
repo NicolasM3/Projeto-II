@@ -801,7 +801,7 @@
 			// dlgAbrir
 			// 
 			this.dlgAbrir.DefaultExt = "txt";
-			this.dlgAbrir.FileName = "openFileDialog1";
+			this.dlgAbrir.FileName = "palavras";
 			this.dlgAbrir.Filter = "text|*.txt";
 			this.dlgAbrir.InitialDirectory = "..\\..\\";
 			this.dlgAbrir.Title = "Abrir lista de palavras";
@@ -1117,7 +1117,7 @@
 			// forca9
 			// 
 			this.forca9.Image = ((System.Drawing.Image)(resources.GetObject("forca9.Image")));
-			this.forca9.Location = new System.Drawing.Point(157, 6);
+			this.forca9.Location = new System.Drawing.Point(-31, -1);
 			this.forca9.Margin = new System.Windows.Forms.Padding(0);
 			this.forca9.Name = "forca9";
 			this.forca9.Size = new System.Drawing.Size(169, 337);
@@ -1304,8 +1304,6 @@
 		private System.Windows.Forms.Button btnA1;
 		private System.Windows.Forms.Button btnÇ;
 		private System.Windows.Forms.Label lblDica;
-		private System.Windows.Forms.Label lblPontos;
-		private System.Windows.Forms.Label lblErros;
 		private System.Windows.Forms.Button btnIniciar;
 		private System.Windows.Forms.CheckBox chkDica;
 		private System.Windows.Forms.Label lblTxtTimer;
@@ -1313,7 +1311,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.OpenFileDialog dlgAbrir;
 		private System.Windows.Forms.TextBox txtDica;
-		private System.Windows.Forms.DataGridView dgvPalavraSecreta;
 		private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -1344,6 +1341,9 @@
 		private System.Windows.Forms.Timer timerJogo;
 		private System.Windows.Forms.Label lblErro;
 		private System.Windows.Forms.Timer timerErro;
+		public System.Windows.Forms.DataGridView dgvPalavraSecreta;
+		public System.Windows.Forms.Label lblPontos;
+		public System.Windows.Forms.Label lblErros;
 	}
 }
 

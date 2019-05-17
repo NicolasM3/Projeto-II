@@ -8,20 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static ProjetoII.Tratamento;
 
 namespace ProjetoII
 {
 	public partial class FormForca : Form
 	{
-		VetorPalavra vetor = new VetorPalavra(100);
-		Random rand = new Random();
-		string palavraSorteada, dicaSorteada;
-        char[] VLetrasPalavra, LetrasTestadas, acertos;
-        int qntLetrasTestadas = 0, erros = 0, pontos = 0, segundos = 120;
+		public static string palavraSorteada, dicaSorteada;
+		public char[] LetrasTestadas, acertos;
+		public static int qntLetrasTestadas = 0, erros = 0, pontos = 0, segundos = 120;
 		bool iniciou;
 
-
-        public FormForca()
+		public FormForca()
 		{
 			InitializeComponent();
 		}
@@ -35,35 +33,33 @@ namespace ProjetoII
 				{
 					abriu = true;
 					LerArquivo(dlgAbrir.FileName);
-                    //txtNome.Text = vetor.Dados[rand.Next(100)].PalavraTexto.Trim();
-                }
+				}
 			}
-		}
-
-		private void LerArquivo(string arquivo)
-		{
-			var reader = new StreamReader(arquivo);
-			while (!reader.EndOfStream)
-			{
-				string linhaLida = reader.ReadLine();
-				string palavra = linhaLida.Substring(0, 15);
-				string dica = linhaLida.Substring(15);
-
-				var palavraDica = new Palavra(palavra, dica);
-
-				vetor.InserirAposFim(palavraDica);
-			}
-			reader.Close();
 		}
 
 		private void btnIniciar_Click(object sender, EventArgs e)
 		{
+			if (iniciou)
+			{
+				Application.Restart();
+			}
 			iniciou = true;
-			int indiceEscolhido = rand.Next(100);
-			palavraSorteada = vetor.Dados[indiceEscolhido].PalavraTexto.Trim();
-			dicaSorteada = vetor.Dados[indiceEscolhido].DicaTexto.Trim();
 
-			VLetrasPalavra = new char[palavraSorteada.Length];
+			forca1.Visible = false;
+			forca1_1.Visible = false;
+			forca2.Visible = false;
+			forca3.Visible = false;
+			forca4.Visible = false;
+			forca5.Visible = false;
+			forca6.Visible = false;
+			forca7.Visible = false;
+			forca8.Visible = false;
+			forca9.Visible = false;
+
+			Random rand = new Random();
+			int indiceEscolhido = rand.Next(100);
+			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada);
+
 			LetrasTestadas = new char[39];
 			acertos = new char[palavraSorteada.Length];
 
@@ -74,12 +70,11 @@ namespace ProjetoII
             txtDica.Text = " ";
             AtualizarImagens();
             segundos = 120;
+			txtDica.Text = "";
 
-
-            int i = 0;
+			int i = 0;
 			foreach (char letra in palavraSorteada)
 			{
-				VLetrasPalavra[i] = letra;
 				dgvPalavraSecreta.Columns[i].HeaderText = "_";
 				i++;
 			}
@@ -103,9 +98,26 @@ namespace ProjetoII
 			{
 				if (iniciou)
 				{
-					string letraStr = (sender as Button).Text;
+					string letraStr;
+					(sender as Button).Enabled = false;
+					if((sender as Button).Text == "")
+						letraStr = " ";
+					else
+						letraStr = (sender as Button).Text;
 					char letra = letraStr[0];
-					Verificar(letra);
+					if (Verificar(letra, palavraSorteada, dgvPalavraSecreta, ref acertos))
+					{
+						pontos--;
+						erros++;
+					}
+					else
+					{
+						pontos++;
+					}
+					AtualizarImagens();
+					lblPontos.Text = $"Pontos: {pontos}";
+					lblErros.Text = $"Erros: {erros} / 8";
+					VerificarVitoria();
 				}
 				else
 				{
@@ -115,15 +127,17 @@ namespace ProjetoII
 			catch (Exception ex)
 			{
 				ExibirErro(ex.Message);
-
 			}
-			
 		}
 
 		private void timer_Tick(object sender, EventArgs e)
 		{
 			segundos--;
 			lblTimer.Text = $"{segundos}s";
+			if (segundos == 0)
+			{
+				Derrota("O tempo acabou.");
+			}
 		}
 
 		private void TxtNome_TextChanged(object sender, EventArgs e)
@@ -143,68 +157,31 @@ namespace ProjetoII
 
 		}
 
-        private void Verificar(char tentativa)
-        {
-			int onde = -1;
-			bool existe = false;
-			for (int indice = 0; !existe && indice < qntLetrasTestadas; indice++)
-				if (LetrasTestadas[indice] == tentativa)
-				{
-					existe = true;
-					onde = indice;
-				}
-			if (!existe)
-			{
-				bool achou = false;
-				LetrasTestadas[qntLetrasTestadas] = tentativa;
-				for (int i = 0; i < palavraSorteada.Length; i++)
-				{
-					if (VLetrasPalavra[i] == Char.ToUpper(tentativa))
-					{
-						dgvPalavraSecreta.Columns[i].HeaderText = tentativa.ToString();
-						acertos[i] = tentativa;
-						pontos++;
-						achou = true;
-						VerificarVitoria();
-					}
-				}
-				if (!achou)
-				{
-					pontos--;
-					erros++;
-				}
-				qntLetrasTestadas++;
-				lblPontos.Text = $"Pontos: {pontos}";
-				lblErros.Text = $"Erros: {erros} / 8";
-				AtualizarImagens();
-			}
-			else
-			{
-				ExibirErro("Você já tentou essa letra!");
-			}
-		}
-
-		private void VerificarVitoria()
+		public void VerificarVitoria()
 		{
 			bool correto = true;
 			for (int i = 0; i < palavraSorteada.Length; i++)
 			{
-				if (acertos[i] != VLetrasPalavra[i])
+				if (acertos[i] != palavraSorteada[i])
 				{
 					correto = false;
 					break;
 				}
 			}
 			if (correto)
+			{
+				GravarDadosEmArquivo();
 				MessageBox.Show("Acertou!");
+				//iniciou = false;
+			}
 		}
 
-		private void Derrota()
+		private void Derrota(string motivo)
 		{
-			iniciou = false;
-			MessageBox.Show("Perdeu");
-            timerJogo.Stop();
+			//iniciou = false;
+			MessageBox.Show("Perdeu! " + motivo);
 			//forca9.Visible = true;
+			timerJogo.Stop();
 		}
 
 		private void ExibirErro(string message)
@@ -219,11 +196,8 @@ namespace ProjetoII
 			timerErro.Stop();
 		}
 
-		private void AtualizarImagens()
+		public void AtualizarImagens()
 		{
-			// Forca_xx
-			// 05/08, 09, 07, 10, 14, 16, 17, 1_05
-
 			switch(erros)
 			{
 				case 0: break;
@@ -234,8 +208,46 @@ namespace ProjetoII
 				case 5: forca5.Visible = true; break;
 				case 6: forca6.Visible = true; break;
 				case 7: forca6.Visible = true; break;
-				case 8: forca7.Visible = true; Derrota(); break;
+				case 8: forca7.Visible = true; Derrota("Errou 8 vezes."); break;
 			}
+		}
+
+		public void GravarDadosEmArquivo()
+		{
+			string arquivo = @"Z:\1o semestre\Técnicas De Programação\Projeto II\pontos.txt";
+			int pontosEscrever = pontos;
+			var reader = new StreamReader(arquivo);
+			int linha = 0;
+			bool achou = false;
+			while (!reader.EndOfStream)
+			{
+				linha++;
+				string linhaLida = reader.ReadLine();
+				string nomeLido = linhaLida.Substring(0, 30).Trim();
+				int pontoLido = int.Parse(linhaLida.Substring(30));
+
+				if (nomeLido == txtNome.Text.ToUpper())
+				{
+					pontosEscrever = pontoLido + pontos;
+					achou = true;
+					break;
+				}
+			}
+			reader.Close();
+			if (achou) EditarLinha($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}", arquivo, linha);
+			else
+			{
+				var writer = new StreamWriter(arquivo, append: true);
+				writer.WriteLine($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}");
+				writer.Close();
+			}
+		}
+
+		static void EditarLinha(string texto, string arquivo, int linha)
+		{
+			string[] arrLine = File.ReadAllLines(arquivo);
+			arrLine[linha - 1] = texto;
+			File.WriteAllLines(arquivo, arrLine);
 		}
 
 	}
