@@ -87,11 +87,6 @@ namespace ProjetoII
 			}
 		}
 
-        private void IniciandoVariaveis()
-        {
-
-        }
-
 		private void VerificarBotao(object sender, EventArgs e)
 		{
 			try
@@ -152,11 +147,6 @@ namespace ProjetoII
 			}
 		}
 
-		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-		}
-
 		public void VerificarVitoria()
 		{
 			bool correto = true;
@@ -172,15 +162,12 @@ namespace ProjetoII
 			{
 				GravarDadosEmArquivo();
 				MessageBox.Show("Acertou!");
-				//iniciou = false;
 			}
 		}
 
 		private void Derrota(string motivo)
 		{
-			//iniciou = false;
 			MessageBox.Show("Perdeu! " + motivo);
-			//forca9.Visible = true;
 			timerJogo.Stop();
 		}
 

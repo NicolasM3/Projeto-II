@@ -22,18 +22,6 @@ namespace ProjetoII
 
 		public Palavra[] Dados { get => dados; }
 
-		/*public void LerDados(string nomeArq)   // ler de um arquivo texto
-		{
-			var arq = new StreamReader(nomeArq);
-			qtosDados = 0;  // esvaziamos o vetor
-			while (!arq.EndOfStream)
-			{
-				int dadoLido = int.Parse(arq.ReadLine());
-				InserirAposFim(dadoLido);
-			}
-			arq.Close();
-		}*/
-
 		public void InserirAposFim(Palavra valorAInserir)
 		{
 			if (qtosDados >= tamanhoMaximo)
