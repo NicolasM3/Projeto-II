@@ -201,7 +201,7 @@ namespace ProjetoII
 
 		public void GravarDadosEmArquivo()
 		{
-			string arquivo = @"Z:\1o semestre\Técnicas De Programação\Projeto II\pontos.txt";
+			string arquivo = @"..\..\..\pontos.txt";
 			int pontosEscrever = pontos;
 			var reader = new StreamReader(arquivo);
 			int linha = 0;
