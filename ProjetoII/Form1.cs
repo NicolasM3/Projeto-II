@@ -167,7 +167,7 @@ namespace ProjetoII
 
 		private void Derrota(string motivo)
 		{
-			MessageBox.Show("Perdeu! " + motivo);
+			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");
 			timerJogo.Stop();
 		}
 
