@@ -193,38 +193,51 @@ namespace ProjetoII
 		{
 			string arquivo = @"..\..\..\pontos.txt";
 			int pontosEscrever = pontos;
-			var reader = new StreamReader(arquivo);
-			int linha = 0;
-			bool achou = false;
+			var reader = new StreamReader(arquivo);                                 // inicializa um StreamReader no arquivo pontos.txt
+			int linha = 0;															// define a linha atual como 0
+			bool achou = false;														// o loop não achou o nome
 			while (!reader.EndOfStream)
 			{
-				linha++;
-				string linhaLida = reader.ReadLine();
-				string nomeLido = linhaLida.Substring(0, 30).Trim();
-				int pontoLido = int.Parse(linhaLida.Substring(30));
+				linha++;															// incrementa a linha
+				string linhaLida = reader.ReadLine();								// lê a linha atual
+				string nomeLido = linhaLida.Substring(0, 30).Trim();				// divide em nome
+				int pontoLido = int.Parse(linhaLida.Substring(30));					//           e ponto
 
-				if (nomeLido == txtNome.Text.ToUpper())
+				if (nomeLido == txtNome.Text.ToUpper())								// se o nome lido for o nome do jogador
 				{
-					pontosEscrever = pontoLido + pontos;
-					achou = true;
-					break;
+					pontosEscrever = pontoLido + pontos;							/* o programa pega os pontos do arquivo
+																					 * e soma à pontuação atual, isso será escrito no arquivo
+																					 */
+					achou = true;													// o programa achou o nome do jogador
+					break;															// quebra o loop
 				}
 			}
-			reader.Close();
-			if (achou) EditarLinha($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}", arquivo, linha);
-			else
+			reader.Close();                                                         // fecha o StreamReader
+			if (achou) EditarLinha($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}", arquivo, linha);   /* se o programa achou o nome do jogador,
+																												 * chama a função EditarLinha(), passando
+																												 * como parâmetros o texto a ser escrito,
+																												 * o arquivo pontos.txt e a linha onde se
+																												 * encontra a pontuação somada do jogador
+																												 */
+			else																								// senão,
 			{
-				var writer = new StreamWriter(arquivo, append: true);
-				writer.WriteLine($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}");
-				writer.Close();
+				var writer = new StreamWriter(arquivo, append: true);                                           /* instancia um StreamWriter definindo os
+																												 * parâmetros arquivo e especificando que
+																												 * ele deve inserir (append) texto, e não
+																												 * sobrescrever o texto existente
+																												 */
+				writer.WriteLine($"{txtNome.Text.ToUpper().PadRight(30)}{pontosEscrever}");						/* escreve uma nova linha com o novo nome
+																												 * e pontuação
+																												 */
+				writer.Close();                                                                                 // fecha o StreamWriter
 			}
 		}
 
-		static void EditarLinha(string texto, string arquivo, int linha)
+		static void EditarLinha(string texto, string arquivo, int linha)			// método para editar uma linha especificada
 		{
-			string[] arrLine = File.ReadAllLines(arquivo);
-			arrLine[linha - 1] = texto;
-			File.WriteAllLines(arquivo, arrLine);
+			string[] arrLine = File.ReadAllLines(arquivo);                          // usa o método ReadAllLines() da classe File para ler todas as linhas
+			arrLine[linha - 1] = texto;												// encontra, na array de linhas lidas, a que será reescrita e envia o texto
+			File.WriteAllLines(arquivo, arrLine);									// escreve todas as linhas de volta, sem alteração exceto a editada
 		}
 
 	}
