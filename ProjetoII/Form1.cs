@@ -14,8 +14,8 @@ namespace ProjetoII
 {
 	public partial class FormForca : Form
 	{
-		public static string palavraSorteada, dicaSorteada;                         // instanciando string
-		public char[] LetrasTestadas, acertos;                                      // instanciando vetores de char
+		public static string palavraSorteada, dicaSorteada;                         // instancia string
+		public char[] LetrasTestadas, acertos;                                      // instancia vetores de char
 		public static int qntLetrasTestadas = 0, erros = 0,                         // instancia e zera inteiros
                             pontos = 0, segundos = 120;                             // instancia e define o tempo
 		bool iniciou;
@@ -46,13 +46,13 @@ namespace ProjetoII
 			}
 			iniciou = true;
 
-			Random rand = new Random();                                             // instanciando objeto random
-			int indiceEscolhido = rand.Next(100);                                   // sorteando novo índice aleatório
-			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada); // recebendo a palavra e a dica sorteada
+			Random rand = new Random();                                             // instancia objeto random
+			int indiceEscolhido = rand.Next(100);                                   // sorteia novo índice aleatório
+			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada); // recebe a palavra e a dica sorteada
 
-			acertos = new char[palavraSorteada.Length];                             // instanciando vetor acertos que recebe as letras acertadas
+			acertos = new char[palavraSorteada.Length];                             // instancia vetor acertos que recebe as letras acertadas
 
-            pontos = 0;                                                             // zerando variáveis
+            pontos = 0;                                                             // zera variáveis
             erros = 0;
             lblPontos.Text = $"Pontos: {pontos}";
             lblErros.Text = $"Erros: {erros} / 8";
@@ -61,7 +61,7 @@ namespace ProjetoII
             segundos = 120;
 			txtDica.Text = "";
 
-			int i = 0;                                                              // instanciando contador
+			int i = 0;                                                              // instancia contador
 			foreach (char letra in palavraSorteada)
 			{
 				dgvPalavraSecreta.Columns[i].HeaderText = "_";                      // adiciona '_' para cada letra da palavra sorteada
@@ -71,7 +71,7 @@ namespace ProjetoII
 
 			if (chkDica.Checked)                                                    // verifica se a dica foi acionada
 			{
-				txtDica.Text = dicaSorteada;                                        // exibi a dica no formulário
+				txtDica.Text = dicaSorteada;                                        // exibe a dica no formulário
 				timerJogo.Start();                                                  // inicia o timer
 			}
 		}
@@ -84,7 +84,7 @@ namespace ProjetoII
 				{
 					string letraStr;
 					(sender as Button).Enabled = false;                                                // desativa o botão clicado
-					if((sender as Button).Text == "")                                                  // "" = " "
+					if((sender as Button).Text == "")                                                  // "" = " " (corrige para que o botão de espaço funcione)
 						letraStr = " ";
 					else
 						letraStr = (sender as Button).Text;                                            // letra recebe o texto do botão clicado 
@@ -157,14 +157,14 @@ namespace ProjetoII
 
 		private void Derrota(string motivo)
 		{
-			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");// exibi mensagem de derrota
-			timerJogo.Stop();                                                       // para o timer
+			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");	// exibe mensagem de derrota
+			timerJogo.Stop();															// para o timer
 		}
 
 		private void ExibirErro(string message)
 		{
 			lblErro.Text = message;                                                     // exibe erro no label acima do teclado 
-			timerErro.Start();                                                          // starta um timer para o tempo em que ele ficará natela
+			timerErro.Start();                                                          // starta um timer para o tempo em que ele ficará na tela
 		}
 
 		private void timerErro_Tick(object sender, EventArgs e)
