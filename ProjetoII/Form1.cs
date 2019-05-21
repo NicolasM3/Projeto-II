@@ -14,9 +14,10 @@ namespace ProjetoII
 {
 	public partial class FormForca : Form
 	{
-		public static string palavraSorteada, dicaSorteada;
-		public char[] LetrasTestadas, acertos;
-		public static int qntLetrasTestadas = 0, erros = 0, pontos = 0, segundos = 120;
+		public static string palavraSorteada, dicaSorteada;                         // instanciando string
+		public char[] LetrasTestadas, acertos;                                      // instanciando vetores de char
+		public static int qntLetrasTestadas = 0, erros = 0,                         // instancia e zera inteiros
+                            pontos = 0, segundos = 120;                             // instancia e define o tempo
 		bool iniciou;
 
 		public FormForca()
@@ -26,44 +27,32 @@ namespace ProjetoII
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			bool abriu = false;
-			while (!abriu)
+			bool abriu = false;     
+			while (!abriu)                                                          // verifica se o jogo não esta aberto
 			{
-				if (dlgAbrir.ShowDialog() == DialogResult.OK)
+				if (dlgAbrir.ShowDialog() == DialogResult.OK)                       // verifica se o arquivo foi escolhido
 				{
-					abriu = true;
-					LerArquivo(dlgAbrir.FileName);
+					abriu = true;                                                   // jogo esta aberto
+					LerArquivo(dlgAbrir.FileName);                                  // lê o arquivo
 				}
 			}
 		}
 
 		private void btnIniciar_Click(object sender, EventArgs e)
 		{
-			if (iniciou)
+			if (iniciou)                                                                                                 
 			{
-				Application.Restart();
+				Application.Restart();                                              // restarta o programa se ja iniciou uma vez
 			}
 			iniciou = true;
 
-			forca1.Visible = false;
-			forca1_1.Visible = false;
-			forca2.Visible = false;
-			forca3.Visible = false;
-			forca4.Visible = false;
-			forca5.Visible = false;
-			forca6.Visible = false;
-			forca7.Visible = false;
-			forca8.Visible = false;
-			forca9.Visible = false;
+			Random rand = new Random();                                             // instanciando objeto random
+			int indiceEscolhido = rand.Next(100);                                   // sorteando novo índice aleatório
+			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada); // recebendo a palavra e a dica sorteada
 
-			Random rand = new Random();
-			int indiceEscolhido = rand.Next(100);
-			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada);
+			acertos = new char[palavraSorteada.Length];                             // instanciando vetor acertos que recebe as letras acertadas
 
-			LetrasTestadas = new char[39];
-			acertos = new char[palavraSorteada.Length];
-
-            pontos = 0;
+            pontos = 0;                                                             // zerando variáveis
             erros = 0;
             lblPontos.Text = $"Pontos: {pontos}";
             lblErros.Text = $"Erros: {erros} / 8";
@@ -72,18 +61,18 @@ namespace ProjetoII
             segundos = 120;
 			txtDica.Text = "";
 
-			int i = 0;
+			int i = 0;                                                              // instanciando contador
 			foreach (char letra in palavraSorteada)
 			{
-				dgvPalavraSecreta.Columns[i].HeaderText = "_";
-				i++;
+				dgvPalavraSecreta.Columns[i].HeaderText = "_";                      // adiciona '_' para cada letra da palavra sorteada
+				i++;                                                                // contador ++
 			}
-			dgvPalavraSecreta.Width = 15 * 26 - (26 * (15 - i));      // define o tamanho do dataGrid para o número de letras necessárias
+			dgvPalavraSecreta.Width = 15 * 26 - (26 * (15 - i));                    // define o tamanho do dataGrid para o número de letras necessárias
 
-			if (chkDica.Checked)
+			if (chkDica.Checked)                                                    // verifica se a dica foi acionada
 			{
-				txtDica.Text = dicaSorteada;
-				timerJogo.Start();
+				txtDica.Text = dicaSorteada;                                        // exibi a dica no formulário
+				timerJogo.Start();                                                  // inicia o timer
 			}
 		}
 
@@ -94,29 +83,29 @@ namespace ProjetoII
 				if (iniciou)
 				{
 					string letraStr;
-					(sender as Button).Enabled = false;
-					if((sender as Button).Text == "")
+					(sender as Button).Enabled = false;                                                // desativa o botão clicado
+					if((sender as Button).Text == "")                                                  // "" = " "
 						letraStr = " ";
 					else
-						letraStr = (sender as Button).Text;
+						letraStr = (sender as Button).Text;                                            // letra recebe o texto do botão clicado 
 					char letra = letraStr[0];
-					if (Verificar(letra, palavraSorteada, dgvPalavraSecreta, ref acertos))
+					if (Verificar(letra, palavraSorteada, dgvPalavraSecreta, ref acertos))             // verifica se a tentiva está no vetor que contem as letras das palavras
 					{
-						pontos--;
+						pontos--;                                                                      // tira pontos e soma erros
 						erros++;
 					}
 					else
 					{
-						pontos++;
+						pontos++;                                                                       // soma erros
 					}
-					AtualizarImagens();
+					AtualizarImagens();                                                                 // atualiza os valores
 					lblPontos.Text = $"Pontos: {pontos}";
 					lblErros.Text = $"Erros: {erros} / 8";
-					VerificarVitoria();
-				}
-				else
-				{
-					throw new Exception("Inicie o jogo primeiro");
+					VerificarVitoria();                                                                 // verifica se venceu
+				}   
+				else                                                                                    // se o jogo não foi iniciado
+                {           
+					throw new Exception("Inicie o jogo primeiro");                                      // lança exceção
 				}
 			}
 			catch (Exception ex)
@@ -127,9 +116,9 @@ namespace ProjetoII
 
 		private void timer_Tick(object sender, EventArgs e)
 		{
-			segundos--;
-			lblTimer.Text = $"{segundos}s";
-			if (segundos == 0)
+			segundos--;                                                         // diminui os segundos
+			lblTimer.Text = $"{segundos}s";                                     // exibe os segundos
+			if (segundos == 0)                                                  // verifica se o tempo acabou
 			{
 				Derrota("O tempo acabou.");
 			}
@@ -137,8 +126,8 @@ namespace ProjetoII
 
 		private void TxtNome_TextChanged(object sender, EventArgs e)
 		{
-			if (txtNome.Text == "")
-			{
+			if (txtNome.Text == "")                                     /* verifica se o nome ja foi colocado para deixar */
+			{                                                           /* o botão iniciar ativo */
 				btnIniciar.Enabled = false;
 			}
 			else
@@ -149,44 +138,45 @@ namespace ProjetoII
 
 		public void VerificarVitoria()
 		{
-			bool correto = true;
-			for (int i = 0; i < palavraSorteada.Length; i++)
+			bool correto = true;                                            // instancia o bool correto
+			for (int i = 0; i < palavraSorteada.Length; i++)                // percorre o vetor com as letras das palavras
 			{
-				if (acertos[i] != palavraSorteada[i])
-				{
-					correto = false;
-					break;
+				if (acertos[i] != palavraSorteada[i])                       /* verifica se o vetor que contem os acertos */
+                {                                                           /* é diferente o vetor que contem as letras da palavra*/
+
+                    correto = false;                                        // se for diferente a palavra ainda correto = false
+					break;                                                  // sai da repetição
 				}
 			}
-			if (correto)
+			if (correto)                                                    // se correto = true o jogo esta ganho                          
 			{
-				GravarDadosEmArquivo();
+				GravarDadosEmArquivo();                                     // grava dados no arquivo
 				MessageBox.Show("Acertou!");
 			}
 		}
 
 		private void Derrota(string motivo)
 		{
-			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");
-			timerJogo.Stop();
+			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");// exibi mensagem de derrota
+			timerJogo.Stop();                                                       // para o timer
 		}
 
 		private void ExibirErro(string message)
 		{
-			lblErro.Text = message;
-			timerErro.Start();
+			lblErro.Text = message;                                                     // exibe erro no label acima do teclado 
+			timerErro.Start();                                                          // starta um timer para o tempo em que ele ficará natela
 		}
 
 		private void timerErro_Tick(object sender, EventArgs e)
 		{
-			lblErro.Text = "";
-			timerErro.Stop();
+			lblErro.Text = "";                                                          // limpa o label erro                                           
+			timerErro.Stop();                                                           // para o timer erro
 		}
 
 		public void AtualizarImagens()
 		{
-			switch(erros)
-			{
+			switch(erros)                                                           // adiciona imagens de acordo com os erros
+			{                                                                       
 				case 0: break;
 				case 1: forca1.Visible = true; forca1_1.Visible = true; break;
 				case 2: forca2.Visible = true; break;
@@ -195,7 +185,7 @@ namespace ProjetoII
 				case 5: forca5.Visible = true; break;
 				case 6: forca6.Visible = true; break;
 				case 7: forca6.Visible = true; break;
-				case 8: forca7.Visible = true; Derrota("Errou 8 vezes."); break;
+				case 8: forca7.Visible = true; Derrota("Errou 8 vezes."); break;    
 			}
 		}
 
