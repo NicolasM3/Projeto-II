@@ -11,7 +11,6 @@ namespace ProjetoII
 {
 	public class Tratamento
 	{
-		static FormForca form = new FormForca();
 		static VetorPalavra vetor = new VetorPalavra(100);
 
 		public static void LerArquivo(string arquivo)
