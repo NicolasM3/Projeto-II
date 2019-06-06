@@ -30,14 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormForca));
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.pictureBox6 = new System.Windows.Forms.PictureBox();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtNome = new System.Windows.Forms.TextBox();
 			this.btnA = new System.Windows.Forms.Button();
@@ -82,7 +74,6 @@
 			this.lblDica = new System.Windows.Forms.Label();
 			this.lblPontos = new System.Windows.Forms.Label();
 			this.lblErros = new System.Windows.Forms.Label();
-			this.btnIniciar = new System.Windows.Forms.Button();
 			this.chkDica = new System.Windows.Forms.CheckBox();
 			this.lblTxtTimer = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
@@ -107,126 +98,52 @@
 			this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.lblTimer = new System.Windows.Forms.Label();
 			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-			this.forca1 = new System.Windows.Forms.PictureBox();
-			this.forca2 = new System.Windows.Forms.PictureBox();
-			this.forca3 = new System.Windows.Forms.PictureBox();
-			this.forca4 = new System.Windows.Forms.PictureBox();
-			this.forca5 = new System.Windows.Forms.PictureBox();
-			this.forca6 = new System.Windows.Forms.PictureBox();
-			this.forca7 = new System.Windows.Forms.PictureBox();
-			this.forca8 = new System.Windows.Forms.PictureBox();
-			this.forca1_1 = new System.Windows.Forms.PictureBox();
-			this.forca9 = new System.Windows.Forms.PictureBox();
 			this.timerJogo = new System.Windows.Forms.Timer(this.components);
 			this.lblErro = new System.Windows.Forms.Label();
 			this.timerErro = new System.Windows.Forms.Timer(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.forca9 = new System.Windows.Forms.PictureBox();
+			this.forca1_1 = new System.Windows.Forms.PictureBox();
+			this.forca8 = new System.Windows.Forms.PictureBox();
+			this.forca7 = new System.Windows.Forms.PictureBox();
+			this.forca6 = new System.Windows.Forms.PictureBox();
+			this.forca5 = new System.Windows.Forms.PictureBox();
+			this.forca4 = new System.Windows.Forms.PictureBox();
+			this.forca3 = new System.Windows.Forms.PictureBox();
+			this.forca2 = new System.Windows.Forms.PictureBox();
+			this.forca1 = new System.Windows.Forms.PictureBox();
+			this.btnIniciar = new System.Windows.Forms.Button();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.pictureBox7 = new System.Windows.Forms.PictureBox();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvPalavraSecreta)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca1_1)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.forca9)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca1_1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca8)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca7)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(31, 271);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(69, 160);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(31, 79);
-			this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(69, 192);
-			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox3.TabIndex = 2;
-			this.pictureBox3.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(31, 25);
-			this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(126, 54);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox2.TabIndex = 3;
-			this.pictureBox2.TabStop = false;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Location = new System.Drawing.Point(325, 41);
-			this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox4.TabIndex = 4;
-			this.pictureBox4.TabStop = false;
-			// 
-			// pictureBox5
-			// 
-			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-			this.pictureBox5.Location = new System.Drawing.Point(157, 173);
-			this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(92, 16);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox5.TabIndex = 5;
-			this.pictureBox5.TabStop = false;
-			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(148, 79);
-			this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(101, 94);
-			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox6.TabIndex = 6;
-			this.pictureBox6.TabStop = false;
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-			this.pictureBox7.Location = new System.Drawing.Point(157, 25);
-			this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(131, 54);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox7.TabIndex = 7;
-			this.pictureBox7.TabStop = false;
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(157, 189);
-			this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(63, 82);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox8.TabIndex = 8;
-			this.pictureBox8.TabStop = false;
 			// 
 			// label1
 			// 
@@ -742,21 +659,6 @@
 			this.lblErros.TabIndex = 52;
 			this.lblErros.Text = "Erros: _ / 8";
 			// 
-			// btnIniciar
-			// 
-			this.btnIniciar.BackColor = System.Drawing.Color.White;
-			this.btnIniciar.Enabled = false;
-			this.btnIniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciar.Image")));
-			this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnIniciar.Location = new System.Drawing.Point(553, 362);
-			this.btnIniciar.Name = "btnIniciar";
-			this.btnIniciar.Size = new System.Drawing.Size(91, 38);
-			this.btnIniciar.TabIndex = 53;
-			this.btnIniciar.Text = "Iniciar";
-			this.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnIniciar.UseVisualStyleBackColor = false;
-			this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
-			// 
 			// chkDica
 			// 
 			this.chkDica.AutoSize = true;
@@ -1006,126 +908,6 @@
 			this.lblTimer.TabIndex = 60;
 			this.lblTimer.Text = "___s";
 			// 
-			// forca1
-			// 
-			this.forca1.Image = ((System.Drawing.Image)(resources.GetObject("forca1.Image")));
-			this.forca1.Location = new System.Drawing.Point(148, 109);
-			this.forca1.Margin = new System.Windows.Forms.Padding(0);
-			this.forca1.Name = "forca1";
-			this.forca1.Size = new System.Drawing.Size(101, 94);
-			this.forca1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca1.TabIndex = 61;
-			this.forca1.TabStop = false;
-			this.forca1.Visible = false;
-			// 
-			// forca2
-			// 
-			this.forca2.Image = ((System.Drawing.Image)(resources.GetObject("forca2.Image")));
-			this.forca2.Location = new System.Drawing.Point(156, 219);
-			this.forca2.Margin = new System.Windows.Forms.Padding(0);
-			this.forca2.Name = "forca2";
-			this.forca2.Size = new System.Drawing.Size(63, 82);
-			this.forca2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca2.TabIndex = 62;
-			this.forca2.TabStop = false;
-			this.forca2.Visible = false;
-			// 
-			// forca3
-			// 
-			this.forca3.Image = ((System.Drawing.Image)(resources.GetObject("forca3.Image")));
-			this.forca3.Location = new System.Drawing.Point(99, 203);
-			this.forca3.Margin = new System.Windows.Forms.Padding(0);
-			this.forca3.Name = "forca3";
-			this.forca3.Size = new System.Drawing.Size(57, 40);
-			this.forca3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca3.TabIndex = 63;
-			this.forca3.TabStop = false;
-			this.forca3.Visible = false;
-			// 
-			// forca4
-			// 
-			this.forca4.Image = ((System.Drawing.Image)(resources.GetObject("forca4.Image")));
-			this.forca4.Location = new System.Drawing.Point(219, 219);
-			this.forca4.Margin = new System.Windows.Forms.Padding(0);
-			this.forca4.Name = "forca4";
-			this.forca4.Size = new System.Drawing.Size(68, 58);
-			this.forca4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca4.TabIndex = 64;
-			this.forca4.TabStop = false;
-			this.forca4.Visible = false;
-			// 
-			// forca5
-			// 
-			this.forca5.Image = ((System.Drawing.Image)(resources.GetObject("forca5.Image")));
-			this.forca5.Location = new System.Drawing.Point(156, 301);
-			this.forca5.Margin = new System.Windows.Forms.Padding(0);
-			this.forca5.Name = "forca5";
-			this.forca5.Size = new System.Drawing.Size(63, 50);
-			this.forca5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca5.TabIndex = 65;
-			this.forca5.TabStop = false;
-			this.forca5.Visible = false;
-			// 
-			// forca6
-			// 
-			this.forca6.Image = ((System.Drawing.Image)(resources.GetObject("forca6.Image")));
-			this.forca6.Location = new System.Drawing.Point(120, 351);
-			this.forca6.Margin = new System.Windows.Forms.Padding(0);
-			this.forca6.Name = "forca6";
-			this.forca6.Size = new System.Drawing.Size(68, 91);
-			this.forca6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca6.TabIndex = 68;
-			this.forca6.TabStop = false;
-			this.forca6.Visible = false;
-			// 
-			// forca7
-			// 
-			this.forca7.Image = ((System.Drawing.Image)(resources.GetObject("forca7.Image")));
-			this.forca7.Location = new System.Drawing.Point(191, 351);
-			this.forca7.Margin = new System.Windows.Forms.Padding(0);
-			this.forca7.Name = "forca7";
-			this.forca7.Size = new System.Drawing.Size(58, 91);
-			this.forca7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca7.TabIndex = 69;
-			this.forca7.TabStop = false;
-			this.forca7.Visible = false;
-			// 
-			// forca8
-			// 
-			this.forca8.Image = ((System.Drawing.Image)(resources.GetObject("forca8.Image")));
-			this.forca8.Location = new System.Drawing.Point(148, 109);
-			this.forca8.Margin = new System.Windows.Forms.Padding(0);
-			this.forca8.Name = "forca8";
-			this.forca8.Size = new System.Drawing.Size(101, 94);
-			this.forca8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca8.TabIndex = 70;
-			this.forca8.TabStop = false;
-			this.forca8.Visible = false;
-			// 
-			// forca1_1
-			// 
-			this.forca1_1.Image = ((System.Drawing.Image)(resources.GetObject("forca1_1.Image")));
-			this.forca1_1.Location = new System.Drawing.Point(156, 203);
-			this.forca1_1.Margin = new System.Windows.Forms.Padding(0);
-			this.forca1_1.Name = "forca1_1";
-			this.forca1_1.Size = new System.Drawing.Size(92, 16);
-			this.forca1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca1_1.TabIndex = 71;
-			this.forca1_1.TabStop = false;
-			this.forca1_1.Visible = false;
-			// 
-			// forca9
-			// 
-			this.forca9.Image = ((System.Drawing.Image)(resources.GetObject("forca9.Image")));
-			this.forca9.Location = new System.Drawing.Point(-31, -1);
-			this.forca9.Margin = new System.Windows.Forms.Padding(0);
-			this.forca9.Name = "forca9";
-			this.forca9.Size = new System.Drawing.Size(169, 337);
-			this.forca9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.forca9.TabIndex = 72;
-			this.forca9.TabStop = false;
-			this.forca9.Visible = false;
-			// 
 			// timerJogo
 			// 
 			this.timerJogo.Interval = 1000;
@@ -1145,6 +927,253 @@
 			// 
 			this.timerErro.Interval = 3000;
 			this.timerErro.Tick += new System.EventHandler(this.timerErro_Tick);
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroToolStripMenuItem,
+            this.sairToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(843, 24);
+			this.menuStrip1.TabIndex = 74;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			// 
+			// sairToolStripMenuItem
+			// 
+			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+			this.sairToolStripMenuItem.Text = "Sair";
+			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+			// 
+			// forca9
+			// 
+			this.forca9.Image = ((System.Drawing.Image)(resources.GetObject("forca9.Image")));
+			this.forca9.Location = new System.Drawing.Point(-21, 55);
+			this.forca9.Margin = new System.Windows.Forms.Padding(0);
+			this.forca9.Name = "forca9";
+			this.forca9.Size = new System.Drawing.Size(169, 337);
+			this.forca9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca9.TabIndex = 72;
+			this.forca9.TabStop = false;
+			this.forca9.Visible = false;
+			// 
+			// forca1_1
+			// 
+			this.forca1_1.Image = ((System.Drawing.Image)(resources.GetObject("forca1_1.Image")));
+			this.forca1_1.Location = new System.Drawing.Point(156, 203);
+			this.forca1_1.Margin = new System.Windows.Forms.Padding(0);
+			this.forca1_1.Name = "forca1_1";
+			this.forca1_1.Size = new System.Drawing.Size(92, 16);
+			this.forca1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca1_1.TabIndex = 71;
+			this.forca1_1.TabStop = false;
+			this.forca1_1.Visible = false;
+			// 
+			// forca8
+			// 
+			this.forca8.Image = ((System.Drawing.Image)(resources.GetObject("forca8.Image")));
+			this.forca8.Location = new System.Drawing.Point(148, 109);
+			this.forca8.Margin = new System.Windows.Forms.Padding(0);
+			this.forca8.Name = "forca8";
+			this.forca8.Size = new System.Drawing.Size(101, 94);
+			this.forca8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca8.TabIndex = 70;
+			this.forca8.TabStop = false;
+			this.forca8.Visible = false;
+			// 
+			// forca7
+			// 
+			this.forca7.Image = ((System.Drawing.Image)(resources.GetObject("forca7.Image")));
+			this.forca7.Location = new System.Drawing.Point(191, 351);
+			this.forca7.Margin = new System.Windows.Forms.Padding(0);
+			this.forca7.Name = "forca7";
+			this.forca7.Size = new System.Drawing.Size(58, 91);
+			this.forca7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca7.TabIndex = 69;
+			this.forca7.TabStop = false;
+			this.forca7.Visible = false;
+			// 
+			// forca6
+			// 
+			this.forca6.Image = ((System.Drawing.Image)(resources.GetObject("forca6.Image")));
+			this.forca6.Location = new System.Drawing.Point(120, 351);
+			this.forca6.Margin = new System.Windows.Forms.Padding(0);
+			this.forca6.Name = "forca6";
+			this.forca6.Size = new System.Drawing.Size(68, 91);
+			this.forca6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca6.TabIndex = 68;
+			this.forca6.TabStop = false;
+			this.forca6.Visible = false;
+			// 
+			// forca5
+			// 
+			this.forca5.Image = ((System.Drawing.Image)(resources.GetObject("forca5.Image")));
+			this.forca5.Location = new System.Drawing.Point(156, 301);
+			this.forca5.Margin = new System.Windows.Forms.Padding(0);
+			this.forca5.Name = "forca5";
+			this.forca5.Size = new System.Drawing.Size(63, 50);
+			this.forca5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca5.TabIndex = 65;
+			this.forca5.TabStop = false;
+			this.forca5.Visible = false;
+			// 
+			// forca4
+			// 
+			this.forca4.Image = ((System.Drawing.Image)(resources.GetObject("forca4.Image")));
+			this.forca4.Location = new System.Drawing.Point(219, 219);
+			this.forca4.Margin = new System.Windows.Forms.Padding(0);
+			this.forca4.Name = "forca4";
+			this.forca4.Size = new System.Drawing.Size(68, 58);
+			this.forca4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca4.TabIndex = 64;
+			this.forca4.TabStop = false;
+			this.forca4.Visible = false;
+			// 
+			// forca3
+			// 
+			this.forca3.Image = ((System.Drawing.Image)(resources.GetObject("forca3.Image")));
+			this.forca3.Location = new System.Drawing.Point(99, 203);
+			this.forca3.Margin = new System.Windows.Forms.Padding(0);
+			this.forca3.Name = "forca3";
+			this.forca3.Size = new System.Drawing.Size(57, 40);
+			this.forca3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca3.TabIndex = 63;
+			this.forca3.TabStop = false;
+			this.forca3.Visible = false;
+			// 
+			// forca2
+			// 
+			this.forca2.Image = ((System.Drawing.Image)(resources.GetObject("forca2.Image")));
+			this.forca2.Location = new System.Drawing.Point(156, 219);
+			this.forca2.Margin = new System.Windows.Forms.Padding(0);
+			this.forca2.Name = "forca2";
+			this.forca2.Size = new System.Drawing.Size(63, 82);
+			this.forca2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca2.TabIndex = 62;
+			this.forca2.TabStop = false;
+			this.forca2.Visible = false;
+			// 
+			// forca1
+			// 
+			this.forca1.Image = ((System.Drawing.Image)(resources.GetObject("forca1.Image")));
+			this.forca1.Location = new System.Drawing.Point(148, 109);
+			this.forca1.Margin = new System.Windows.Forms.Padding(0);
+			this.forca1.Name = "forca1";
+			this.forca1.Size = new System.Drawing.Size(101, 94);
+			this.forca1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.forca1.TabIndex = 61;
+			this.forca1.TabStop = false;
+			this.forca1.Visible = false;
+			// 
+			// btnIniciar
+			// 
+			this.btnIniciar.BackColor = System.Drawing.Color.White;
+			this.btnIniciar.Enabled = false;
+			this.btnIniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciar.Image")));
+			this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnIniciar.Location = new System.Drawing.Point(553, 362);
+			this.btnIniciar.Name = "btnIniciar";
+			this.btnIniciar.Size = new System.Drawing.Size(91, 38);
+			this.btnIniciar.TabIndex = 53;
+			this.btnIniciar.Text = "Iniciar";
+			this.btnIniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnIniciar.UseVisualStyleBackColor = false;
+			this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(157, 189);
+			this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(63, 82);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox8.TabIndex = 8;
+			this.pictureBox8.TabStop = false;
+			// 
+			// pictureBox7
+			// 
+			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+			this.pictureBox7.Location = new System.Drawing.Point(157, 25);
+			this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox7.Name = "pictureBox7";
+			this.pictureBox7.Size = new System.Drawing.Size(131, 54);
+			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox7.TabIndex = 7;
+			this.pictureBox7.TabStop = false;
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+			this.pictureBox6.Location = new System.Drawing.Point(148, 79);
+			this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(101, 94);
+			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox6.TabIndex = 6;
+			this.pictureBox6.TabStop = false;
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+			this.pictureBox5.Location = new System.Drawing.Point(157, 173);
+			this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(92, 16);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox5.TabIndex = 5;
+			this.pictureBox5.TabStop = false;
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Location = new System.Drawing.Point(325, 41);
+			this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox4.TabIndex = 4;
+			this.pictureBox4.TabStop = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(31, 25);
+			this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(126, 54);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox2.TabIndex = 3;
+			this.pictureBox2.TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+			this.pictureBox3.Location = new System.Drawing.Point(31, 79);
+			this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(69, 192);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox3.TabIndex = 2;
+			this.pictureBox3.TabStop = false;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(31, 271);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(69, 160);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox1.TabIndex = 0;
+			this.pictureBox1.TabStop = false;
 			// 
 			// FormForca
 			// 
@@ -1222,31 +1251,35 @@
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.menuStrip1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MainMenuStrip = this.menuStrip1;
 			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "FormForca";
 			this.Text = "Jogo da Forca";
 			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvPalavraSecreta)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca6)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.forca1_1)).EndInit();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.forca9)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca1_1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca8)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca7)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.forca1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1344,6 +1377,9 @@
 		public System.Windows.Forms.DataGridView dgvPalavraSecreta;
 		public System.Windows.Forms.Label lblPontos;
 		public System.Windows.Forms.Label lblErros;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
 	}
 }
 

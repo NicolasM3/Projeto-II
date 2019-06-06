@@ -14,6 +14,7 @@ namespace ProjetoII
 {
 	public partial class FormForca : Form
 	{
+		Form2 cadastro;
 		public static string palavraSorteada, dicaSorteada;                         // instancia string
 		public char[] LetrasTestadas, acertos;                                      // instancia vetores de char
 		public static int qntLetrasTestadas = 0, erros = 0,                         // instancia e zera inteiros
@@ -35,6 +36,8 @@ namespace ProjetoII
 					abriu = true;                                                   // jogo esta aberto
 					LerArquivo(dlgAbrir.FileName);                                  // lê o arquivo
 				}
+				else
+					Close();
 			}
 		}
 
@@ -152,6 +155,7 @@ namespace ProjetoII
 			{
 				GravarDadosEmArquivo();                                     // grava dados no arquivo
 				MessageBox.Show("Acertou!");
+				timerJogo.Stop();
 			}
 		}
 
@@ -159,6 +163,18 @@ namespace ProjetoII
 		{
 			MessageBox.Show($"Perdeu! {motivo}\nA palavra era \"{palavraSorteada}\"");	// exibe mensagem de derrota
 			timerJogo.Stop();															// para o timer
+		}
+
+		private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
+
+		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			//if(cadastro == null)
+			cadastro = new Form2();
+			cadastro.Show();
 		}
 
 		private void ExibirErro(string message)
