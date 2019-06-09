@@ -20,6 +20,7 @@ namespace ProjetoII
 		public static int qntLetrasTestadas = 0, erros = 0,                         // instancia e zera inteiros
                             pontos = 0, segundos = 120;                             // instancia e define o tempo
 		bool iniciou;
+		public static string bancoDePalavras;
 
 		public FormForca()
 		{
@@ -34,7 +35,7 @@ namespace ProjetoII
 				if (dlgAbrir.ShowDialog() == DialogResult.OK)                       // verifica se o arquivo foi escolhido
 				{
 					abriu = true;                                                   // jogo esta aberto
-					LerArquivo(dlgAbrir.FileName);                                  // lê o arquivo
+					bancoDePalavras = dlgAbrir.FileName;
 				}
 				else
 					Close();
@@ -49,6 +50,7 @@ namespace ProjetoII
 			}
 			iniciou = true;
 
+			LerArquivo(bancoDePalavras);
 			Random rand = new Random();                                             // instancia objeto random
 			int indiceEscolhido = rand.Next(100);                                   // sorteia novo índice aleatório
 			SortearPalavra(indiceEscolhido, ref palavraSorteada, ref dicaSorteada); // recebe a palavra e a dica sorteada
@@ -258,3 +260,4 @@ namespace ProjetoII
 
 	}
 }
+    

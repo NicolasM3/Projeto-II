@@ -97,7 +97,6 @@
 			this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.lblTimer = new System.Windows.Forms.Label();
-			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
 			this.timerJogo = new System.Windows.Forms.Timer(this.components);
 			this.lblErro = new System.Windows.Forms.Label();
 			this.timerErro = new System.Windows.Forms.Timer(this.components);
@@ -1360,7 +1359,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-		private System.Drawing.Printing.PrintDocument printDocument1;
 		private System.Windows.Forms.PictureBox forca1;
 		private System.Windows.Forms.PictureBox forca2;
 		private System.Windows.Forms.PictureBox forca3;

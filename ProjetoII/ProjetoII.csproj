@@ -57,10 +57,13 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="IRegisto.cs" />
+    <Compile Include="IVetorDados.cs" />
     <Compile Include="Palavra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tratamento.cs" />
+    <Compile Include="VetorDados.cs" />
     <Compile Include="VetorPalavra.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

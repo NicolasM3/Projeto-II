@@ -30,6 +30,7 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.imlBotoes = new System.Windows.Forms.ImageList(this.components);
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,8 +43,18 @@
 			this.btnEditar = new System.Windows.Forms.ToolStripButton();
 			this.btnSalvar = new System.Windows.Forms.ToolStripButton();
 			this.btnExcluir = new System.Windows.Forms.ToolStripButton();
+			this.lbPalavra = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txtPalavra = new System.Windows.Forms.TextBox();
+			this.txtDica = new System.Windows.Forms.TextBox();
+			this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
+			this.dgvPalavra = new System.Windows.Forms.DataGridView();
+			this.Indice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Palavra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Dica = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.menuStrip1.SuspendLayout();
 			this.barraDeFerramentas.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvPalavra)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// imlBotoes
@@ -103,6 +114,7 @@
 			this.btnInicio.Text = "Início";
 			this.btnInicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
 			// 
 			// btnAnterior
 			// 
@@ -110,10 +122,11 @@
 			this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
 			this.btnAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnAnterior.Name = "btnAnterior";
-			this.btnAnterior.Size = new System.Drawing.Size(42, 35);
+			this.btnAnterior.Size = new System.Drawing.Size(41, 35);
 			this.btnAnterior.Text = "Voltar";
 			this.btnAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
 			// 
 			// btnProximo
 			// 
@@ -125,6 +138,7 @@
 			this.btnProximo.Text = "Avançar";
 			this.btnProximo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
 			// 
 			// btnUltimo
 			// 
@@ -136,6 +150,7 @@
 			this.btnUltimo.Text = "Último";
 			this.btnUltimo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
 			// 
 			// btnNovo
 			// 
@@ -147,6 +162,7 @@
 			this.btnNovo.Text = "Incluir";
 			this.btnNovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
 			// 
 			// btnEditar
 			// 
@@ -158,10 +174,12 @@
 			this.btnEditar.Text = "Alterar";
 			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
 			// 
 			// btnSalvar
 			// 
 			this.btnSalvar.BackColor = System.Drawing.Color.Silver;
+			this.btnSalvar.Enabled = false;
 			this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
 			this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnSalvar.Name = "btnSalvar";
@@ -169,6 +187,7 @@
 			this.btnSalvar.Text = "Salvar";
 			this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
 			// 
 			// btnExcluir
 			// 
@@ -180,17 +199,97 @@
 			this.btnExcluir.Text = "Excluir";
 			this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+			// 
+			// lbPalavra
+			// 
+			this.lbPalavra.AutoSize = true;
+			this.lbPalavra.Location = new System.Drawing.Point(10, 77);
+			this.lbPalavra.Name = "lbPalavra";
+			this.lbPalavra.Size = new System.Drawing.Size(71, 24);
+			this.lbPalavra.TabIndex = 2;
+			this.lbPalavra.Text = "Palavra";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(10, 111);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(47, 24);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "Dica";
+			// 
+			// txtPalavra
+			// 
+			this.txtPalavra.Enabled = false;
+			this.txtPalavra.Location = new System.Drawing.Point(87, 72);
+			this.txtPalavra.Name = "txtPalavra";
+			this.txtPalavra.Size = new System.Drawing.Size(357, 29);
+			this.txtPalavra.TabIndex = 4;
+			// 
+			// txtDica
+			// 
+			this.txtDica.Enabled = false;
+			this.txtDica.Location = new System.Drawing.Point(87, 107);
+			this.txtDica.Name = "txtDica";
+			this.txtDica.Size = new System.Drawing.Size(357, 29);
+			this.txtDica.TabIndex = 5;
+			// 
+			// dlgAbrir
+			// 
+			this.dlgAbrir.FileName = "openFileDialog1";
+			// 
+			// dgvPalavra
+			// 
+			this.dgvPalavra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dgvPalavra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvPalavra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Indice,
+            this.Palavra,
+            this.Dica});
+			this.dgvPalavra.Location = new System.Drawing.Point(14, 142);
+			this.dgvPalavra.Name = "dgvPalavra";
+			this.dgvPalavra.Size = new System.Drawing.Size(753, 235);
+			this.dgvPalavra.TabIndex = 6;
+			this.dgvPalavra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPalavra_CellClick);
+			// 
+			// Indice
+			// 
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.Indice.DefaultCellStyle = dataGridViewCellStyle1;
+			this.Indice.HeaderText = "#";
+			this.Indice.Name = "Indice";
+			this.Indice.Width = 50;
+			// 
+			// Palavra
+			// 
+			this.Palavra.HeaderText = "Palavra";
+			this.Palavra.Name = "Palavra";
+			this.Palavra.Width = 150;
+			// 
+			// Dica
+			// 
+			this.Dica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Dica.HeaderText = "Dica";
+			this.Dica.Name = "Dica";
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(779, 389);
+			this.Controls.Add(this.dgvPalavra);
+			this.Controls.Add(this.txtDica);
+			this.Controls.Add(this.txtPalavra);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.lbPalavra);
 			this.Controls.Add(this.barraDeFerramentas);
 			this.Controls.Add(this.menuStrip1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.MainMenuStrip = this.menuStrip1;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "Form2";
 			this.Text = "Form2";
 			this.Load += new System.EventHandler(this.Form2_Load);
@@ -198,6 +297,7 @@
 			this.menuStrip1.PerformLayout();
 			this.barraDeFerramentas.ResumeLayout(false);
 			this.barraDeFerramentas.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvPalavra)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -217,5 +317,14 @@
 		private System.Windows.Forms.ToolStripButton btnEditar;
 		private System.Windows.Forms.ToolStripButton btnSalvar;
 		private System.Windows.Forms.ToolStripButton btnExcluir;
+        private System.Windows.Forms.Label lbPalavra;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPalavra;
+        private System.Windows.Forms.TextBox txtDica;
+        private System.Windows.Forms.OpenFileDialog dlgAbrir;
+        private System.Windows.Forms.DataGridView dgvPalavra;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Indice;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Palavra;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Dica;
 	}
 }

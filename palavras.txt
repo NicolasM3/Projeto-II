@@ -1,100 +1,101 @@
-﻿IPTU           Imposto sobre imóveis urbanos
-BALEIA         Cetáceo
-SHAKESPEARE    Escritor inglês
-FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas
-CACHORRO       Animal domestico
-GATO           Animal domestico
-PÁSSARO        Considerado ordem da classe aves em níveis taxonômico
-MESA           móvel composto de um tampo horizontal
-TECLADO        Agrupamento de teclas
-MONITOR        Indivíduo encarregado do ensino e da orientação de esportes ou de certas disciplinas
-CADEIRA        Peça de mobília composta de um assento individual e de um encosto
-CAIXA          Reserva em espécie que uma empresa mantém em suas dependências para cobertura de pequenas despesas
-MOUSE          Dispositivo de entrada dotado de um a três botões
-BOLSA          Pequeno saco para guardar o dinheiro em moedas
-CELULAR        Telefone móvel
-CANETA         Utensílio contendo tinta ou similar
-LÁPIS          Instrumento para escrever, desenhar ou riscar
-LOUSA          Quadro de ardósia de tamanhos variados, com moldura de madeira
-JANELA         Abertura ou vão na parede externa de uma edificação ou no corpo de um veículo
-ÁRVORE         Vegetal lenhoso de porte muito variável, que apresenta um caule principal
-PORTA          Peça plana com que se fecha uma abertura, normalmente presa por um dos lados à parede
-VENTILADOR     Dispositivo mecânico utilizado para converter energia mecânica de rotação
-LÂMPADA        Recipiente com líquido combustível e um pavio por onde é alimentada a chama que serve para iluminar
-ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas 
-MOINHO DE VENTOConstrução feita para triturar cereais 
-ALUNO          Indivíduo que recebe instrução ou educação em estabelecimento de ensino ou não
-CAUDA          Apêndice pós-anal dos vertebrados, que encerra a porção terminal da coluna vertebral
-CONCHA         Espécie de colher grande, funda e de cabo longo, us. para servir alimentos líquidos ou pastosos
-BRASIL         Maior República Federativa da América do sul
-CANADÁ         Antiga colônia inglesa no hemisfério norte do globo
-SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das Forças Armadas
-MARTELO        Ferramenta provida de uma cabeça de ferro ou outro material forte e pesado, presa a um cabo
-CORAL          Cnidários da classe Anthozoa, que podem constituir colônias coloridas 
-GARAGEM        Moral forte perante o perigo, os riscos; bravura, intrepidez
-PINÇA          Instrumento constituído de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo
-BATALHA        combate entre forças oponentes, em terra, no ar e/ou no mar
-EPITÁFIO       Inscrição sobre lápides tumulares ou monumentos funerários
-PRESIDENTE     Aquele que tem a função de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, concílio
-GIZ            Calcário reduzido a pó e moldado em forma de bastonete, usado para escrever, desenhar, riscar.
-EGITO          Civilização do Antigo Oriente Próximo do Norte de África, concentrada ao longo ao do rio Nilo
-VOLEIBOL       Esporte disputado entre duas equipes , em quadra retangular, dividida ao meio por uma rede
-GAIVOTA        Designação dada a várias aves marinhas palmípedes da família dos larídeos
-PACOTE         Pequeno embrulho
-CIANETO        Nome do composto químico que contém o grupo ciano, altamente tóxico
-INVÁLIDO       Aquele que, por deficiência física ou mental, se tornou incapaz de levar uma vida profissional
-PRESENTE       Que se encontra ou está à vista em determinado lugar
-TUBARÃO        São peixes , grandes predadores e embora de discutida qualidade, sua carne é muito consumida
-PROTESTO       Ato ou efeito de reclamar; queixa, reclamação
-AVIÃO          Aeronave de propulsão a motor, cuja sustentação no ar é assegurada por meio de asas
-TREM           Série de vagões engatados entre si e puxados por uma locomotiva
-ALGODÃO        Fibra branca que cresce a volta das sementes de algumas espécies, utilizada na área têxtil
-SALMÃO         Peixe do Atlântico norte,com carne que possui excelente sabor e alto valor comercial
-CABIDE         Gancho preso a uma parede e em que se penduram roupas, chapéus, toalhas, bengalas etc
-LIVRARIA       Estabelecimento com livros
-GALÁXIA        Sistema estelar isolado no espaço cósmico, ao qual pertencem o Sol e mais de cem bilhões de corpos 
-UVA            Fruto utilizado frequentemente para produzir doce, vinho e passas
-MAÇA           Arma formada por um cabo comprido, com uma pesada bola de ferro dentada
-PERA           Fruto da pereira
-MANGA          Parte da vestimenta, de forma e dimensões variáveis, e que recobre o braço total ou parcialmente
-CORTINA        Peça de pano ou de outro material usada para proteger ou adornar janelas, portas, leitos
-CALENDÁRIO     Sistema para contagem e agrupamento de dias, meses, anos
-RELÓGIO        Maquinismo ou aparelho que serve para marcar o tempo e indicar as horas
-AMPULHETA      Artefato de medir o tempo constituído por um recipiente originalmente de vidro preenchido de areia
-INFRAVERMELHO  Tipo de radiação eletromagnética que apresenta frequência menor que a da luz visível ao olho humano
-BARRIL         Recipiente de madeira destinado a conservar ou transportar algo
-SORO           Solução de substância orgânica ou mineral usada na hidratação ou alimentação
-LUVA           Vestimenta que cobre as mãos, punho e parte do antebraço
-INJEÇÂO        Ato de injetar sob pressão líquido ou gás no organismo com o auxílio de seringa e agulha
-ROUPA          Objeto usado para cobrir certas partes do corpo    
-FERRAMENTA     Apetrecho de metal usado em artes e ofícios
-MARFIM         Dente do elefante, antes de transformado em artefato
-NUCLEAR        Referente a um núcleo
-ESPUMA         Conjunto de minúsculas bolhas 
-CARTAS         Meio escrito de comunicação
-FUNIL          Utensílio em forma de cone usado para despejar líquidos em recipientes de boca estreita
-BARBEADOR      Lânima usada para barbear
-PADRASTO       Homem em relação aos filhos anteriores da mulher
-DETETIVE       Agente de investigação
-BROTO          Saliência que dá origem a um novo indivíduo
-LIVRO          Coleção de folhas de papel, reunidas em cadernos, cujos dorsos são unidos 
-COTOVELO       Região na parte posterior da articulação do braço
-DESTILAR       Processo químico no qual o elemento vair sair em gotas    
-RIFLE          Carabina de cano longo
-ANDORINHA      Ave migratória comum em Campinas
-GRAFITE        Rabisco ou desenho simplificado, iniciais do autor, ou feitos em paredes e muros
-CRUZ VERMELHA  Organização internacional, com objetivo de prestar socorro às pessoas vítimas de guerras
-PADRE          Homem que recebeu ordenação sacerdotal
-POESIA         Composição poética de pequena extensão 
-PORCO ESPINHO  Roedores de corpo atarracado, patas curtas e longos espinhos protetores
-ESTRIBO        Espécie de aro de metal, madeira ou sola que pende de cada lado da sela 
-CEBOLA         Planta , de folhas compridas e cilíndricas, cujo bolbo é usado na alimentação
-GIRASSOL       Flor que segue uma estrela
-LIXEIRA        Recipiente de forma e tamanho variados, móvel ou fixo, onde se reúne o lixo
-BIGODES        Homônimo a "grandes deuses" em inglês
-PÁ             Utensílio que consiste numa grande colher,adaptado a um cabo usada para escavar 
-CONDE          Na Idade Média e na Moderna, aquele que detinha o comando militar de um território
-CABO           Graduação hierárquica militar imediatamente superior ao soldado
-PAPAGAIO       Ave que memoriza e repete o que ouve 
-SINO           Instrumento obcônico, oco, normalmente feito de bronze
-CATEDRAL       Templo cristão em que se encontra a sede de um bispo
+IPTU           Imposto sobre imóveis urbanos                                                                       
+BALEIA         Cetáceo                                                                                             
+SHAKESPEARE    Escritor inglês                                                                                     
+FERRAMENTA     Dispositivo que forneça vantagem mecânica para realizar tarefas                                     
+CACHORRO       Animal domestico                                                                                    
+GATO           Animal domestico                                                                                    
+PÁSSARO        Considerado ordem da classe aves em níveis taxonômico                                               
+MESA           móvel composto de um tampo horizontal                                                               
+TECLADO        Agrupamento de teclas                                                                               
+MONITOR        Indivíduo encarregado do ensino e da orientação de esportes ou de certas disciplinas                
+CADEIRA        Peça de mobília composta de um assento individual e de um encosto                                   
+CAIXA          Reserva em espécie que uma empresa mantém em suas dependências para cobertura de pequenas despesas  
+MOUSE          Dispositivo de entrada dotado de um a três botões                                                   
+BOLSA          Pequeno saco para guardar o dinheiro em moedas                                                      
+CELULAR        Telefone móvel                                                                                      
+CANETA         Utensílio contendo tinta ou similar                                                                 
+LÁPIS          Instrumento para escrever, desenhar ou riscar                                                       
+LOUSA          Quadro de ardósia de tamanhos variados, com moldura de madeira                                      
+JANELA         Abertura ou vão na parede externa de uma edificação ou no corpo de um veículo                       
+ÁRVORE         Vegetal lenhoso de porte muito variável, que apresenta um caule principal                           
+PORTA          Peça plana com que se fecha uma abertura, normalmente presa por um dos lados à parede               
+VENTILADOR     Dispositivo mecânico utilizado para converter energia mecânica de rotação                           
+LÂMPADA        Recipiente com líquido combustível e um pavio por onde é alimentada a chama que serve para iluminar 
+ELEVADOR       Equipamento de transporte utilizado para mover bens ou pessoas                                      
+MOINHO DE VENTOConstrução feita para triturar cereais                                                              
+ALUNO          Indivíduo que recebe instrução ou educação em estabelecimento de ensino ou não                      
+CAUDA          Apêndice pós-anal dos vertebrados, que encerra a porção terminal da coluna vertebral                
+CONCHA         Espécie de colher grande, funda e de cabo longo, us. para servir alimentos líquidos ou pastosos     
+BRASIL         Maior República Federativa da América do sul                                                        
+CANADÁ         Antiga colônia inglesa no hemisfério norte do globo                                                 
+SOLDADO        Militar que ocupa o mais baixo grau da hierarquia das Forças Armadas                                
+MARTELO        Ferramenta provida de uma cabeça de ferro ou outro material forte e pesado, presa a um cabo         
+CORAL          Cnidários da classe Anthozoa, que podem constituir colônias coloridas                               
+GARAGEM        Moral forte perante o perigo, os riscos; bravura, intrepidez                                        
+PINÇA          Instrumento constituído de duas hastes ligadas numa das pontas, usado para arrancar ou segurar algo 
+BATALHA        combate entre forças oponentes, em terra, no ar e/ou no mar                                         
+EPITÁFIO       Inscrição sobre lápides tumulares ou monumentos funerários                                          
+PRESIDENTE     Aquele que tem a função de ocupar o primeiro lugar numa junta, empresa, comunidade, coro, concílio  
+GIZ            Calcário reduzido a pó e moldado em forma de bastonete, usado para escrever, desenhar, riscar.      
+EGITO          Civilização do Antigo Oriente Próximo do Norte de África, concentrada ao longo ao do rio Nilo       
+VOLEIBOL       Esporte disputado entre duas equipes , em quadra retangular, dividida ao meio por uma rede          
+GAIVOTA        Designação dada a várias aves marinhas palmípedes da família dos larídeos                           
+PACOTE         Pequeno embrulho                                                                                    
+CIANETO        Nome do composto químico que contém o grupo ciano, altamente tóxico                                 
+INVÁLIDO       Aquele que, por deficiência física ou mental, se tornou incapaz de levar uma vida profissional      
+PRESENTE       Que se encontra ou está à vista em determinado lugar                                                
+TUBARÃO        São peixes , grandes predadores e embora de discutida qualidade, sua carne é muito consumida        
+PROTESTO       Ato ou efeito de reclamar; queixa, reclamação                                                       
+AVIÃO          Aeronave de propulsão a motor, cuja sustentação no ar é assegurada por meio de asas                 
+TREM           Série de vagões engatados entre si e puxados por uma locomotiva                                     
+ALGODÃO        Fibra branca que cresce a volta das sementes de algumas espécies, utilizada na área têxtil          
+SALMÃO         Peixe do Atlântico norte,com carne que possui excelente sabor e alto valor comercial                
+CABIDE         Gancho preso a uma parede e em que se penduram roupas, chapéus, toalhas, bengalas etc               
+LIVRARIA       Estabelecimento com livros                                                                          
+GALÁXIA        Sistema estelar isolado no espaço cósmico, ao qual pertencem o Sol e mais de cem bilhões de corpos  
+UVA            Fruto utilizado frequentemente para produzir doce, vinho e passas                                   
+MAÇA           Arma formada por um cabo comprido, com uma pesada bola de ferro dentada                             
+PERA           Fruto da pereira                                                                                    
+MANGA          Parte da vestimenta, de forma e dimensões variáveis, e que recobre o braço total ou parcialmente    
+CORTINA        Peça de pano ou de outro material usada para proteger ou adornar janelas, portas, leitos            
+CALENDÁRIO     Sistema para contagem e agrupamento de dias, meses, anos                                            
+RELÓGIO        Maquinismo ou aparelho que serve para marcar o tempo e indicar as horas                             
+AMPULHETA      Artefato de medir o tempo constituído por um recipiente originalmente de vidro preenchido de areia  
+INFRAVERMELHO  Tipo de radiação eletromagnética que apresenta frequência menor que a da luz visível ao olho humano 
+BARRIL         Recipiente de madeira destinado a conservar ou transportar algo                                     
+SORO           Solução de substância orgânica ou mineral usada na hidratação ou alimentação                        
+LUVA           Vestimenta que cobre as mãos, punho e parte do antebraço                                            
+INJEÇÂO        Ato de injetar sob pressão líquido ou gás no organismo com o auxílio de seringa e agulha            
+ROUPA          Objeto usado para cobrir certas partes do corpo                                                     
+FERRAMENTA     Apetrecho de metal usado em artes e ofícios                                                         
+MARFIM         Dente do elefante, antes de transformado em artefato                                                
+NUCLEAR        Referente a um núcleo                                                                               
+ESPUMA         Conjunto de minúsculas bolhas                                                                       
+CARTAS         Meio escrito de comunicação                                                                         
+FUNIL          Utensílio em forma de cone usado para despejar líquidos em recipientes de boca estreita             
+BARBEADOR      Lânima usada para barbear                                                                           
+PADRASTO       Homem em relação aos filhos anteriores da mulher                                                    
+DETETIVE       Agente de investigação                                                                              
+BROTO          Saliência que dá origem a um novo indivíduo                                                         
+LIVRO          Coleção de folhas de papel, reunidas em cadernos, cujos dorsos são unidos                           
+COTOVELO       Região na parte posterior da articulação do braço                                                   
+DESTILAR       Processo químico no qual o elemento vair sair em gotas                                              
+RIFLE          Carabina de cano longo                                                                              
+ANDORINHA      Ave migratória comum em Campinas                                                                    
+GRAFITE        Rabisco ou desenho simplificado, iniciais do autor, ou feitos em paredes e muros                    
+CRUZ VERMELHA  Organização internacional, com objetivo de prestar socorro às pessoas vítimas de guerras            
+PADRE          Homem que recebeu ordenação sacerdotal                                                              
+POESIA         Composição poética de pequena extensão                                                              
+PORCO ESPINHO  Roedores de corpo atarracado, patas curtas e longos espinhos protetores                             
+ESTRIBO        Espécie de aro de metal, madeira ou sola que pende de cada lado da sela                             
+CEBOLA         Planta de folhas compridas e cilíndricas, cujo bolbo é usado na alimentação                         
+GIRASSOL       Flor que segue uma estrela                                                                          
+LIXEIRA        Recipiente de forma e tamanho variados, móvel ou fixo, onde se reúne o lixo                         
+BIGODES        Homônimo a "grandes deuses" em inglês                                                               
+PÁ             Utensílio que consiste numa grande colher,adaptado a um cabo usada para escavar                     
+CONDE          Na Idade Média e na Moderna, aquele que detinha o comando militar de um território                  
+CABO           Graduação hierárquica militar imediatamente superior ao soldado                                     
+PAPAGAIO       Ave que memoriza e repete o que ouve                                                                
+SINO           Instrumento obcônico, oco, normalmente feito de bronze                                              
+CATEDRAL       Templo cristão em que se encontra a sede de um bispo                                                
+FITA           Tira fina usada para colar                                                                          
