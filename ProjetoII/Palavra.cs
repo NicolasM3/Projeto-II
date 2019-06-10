@@ -45,11 +45,7 @@ namespace ProjetoII
 
         public int CompareTo(Palavra outro)
         {
-            // codigoLivro é string, e a classe string já vem com
-            // um método CompareTo pronto e, assim, nós o chamamos
-            // para comparar o código do livro desta instância com
-            // o código do livro do outro objeto Livro (parâmetro outro)
-            return 1;
+			return palavraTexto.CompareTo(outro.palavraTexto);
         }
     }
 }

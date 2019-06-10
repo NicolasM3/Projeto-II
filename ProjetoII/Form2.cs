@@ -41,14 +41,13 @@ namespace ProjetoII
 		private void AtualizaDataGrid()
 		{
 			dgvPalavra.Rows.Clear();
-
+			asPalavras.Ordenar();
 			for (int i = 0; i < asPalavras.Tamanho; i++)
 			{
 				Palavra palavraDataGrid = asPalavras[i];
-				this.dgvPalavra.Rows.Insert(i, i, palavraDataGrid.PalavraTexto, palavraDataGrid.DicaTexto);
-				//asPalavras.AvancarPosicao();
-				asPalavras.PosicionarNoUltimo();
+				dgvPalavra.Rows.Insert(i, i, palavraDataGrid.PalavraTexto, palavraDataGrid.DicaTexto);
 			}
+			asPalavras.PosicionarNoUltimo();
 			AtualizarTela();
 		}
 
@@ -60,32 +59,8 @@ namespace ProjetoII
 				txtPalavra.Text = palavra.PalavraTexto.Trim();
 				txtDica.Text = palavra.DicaTexto.Trim();
 
-				//txtEndereco.Text = palavra.Enderecpalavra;
-				//dgvLivros.RowCount = palavra.QuantosLivrosComLeitor + 1;
-
-				//for (int umLivro = 0;
-				//         umLivro < palavra.QuantosLivrosComLeitor; umLivro++)
-				//{
-				//    int ondeLivro = -1;
-				//    var livroProcurado =
-				//        new Livro(palavra.CodigoLivroComLeitor[umLivro]);
-				//    if (osLivros.Existe(livroProcurado, ref ondeLivro))
-				//    {
-				//        Livro oLivro = osLivros[ondeLivro];
-				//        dgvLivros.Rows[umLivro].Cells[0].Value = oLivro.CodigoLivro;
-				//        dgvLivros.Rows[umLivro].Cells[1].Value = oLivro.TituloLivro;
-				//        dgvLivros.Rows[umLivro].Cells[2].Value = oLivro.DataDevolucao.ToShortDateString();
-				//        if (oLivro.DataDevolucao < DateTime.Now.Date)
-				//            dgvLivros.Rows[umLivro].Cells[3].Value = "S";
-				//        else
-				//            dgvLivros.Rows[umLivro].Cells[3].Value = "N";
-				//    }
-				//}
-
-				//TestarBotoes();
-				//stlbMensagem.Text =
-				//"Registro " + (asPalavras.PosicaoAtual + 1) +
-				//           "/" + asPalavras.Tamanho;
+				dgvPalavra.ClearSelection();
+				dgvPalavra.Rows[asPalavras.PosicaoAtual].Selected = true;
 			}
 		}
 
@@ -93,13 +68,6 @@ namespace ProjetoII
 		{
 			txtPalavra.Clear();
 			txtDica.Clear();
-			//foreach (Control botao in grbTipoLivro.Controls)
-			//    if (botao is RadioButton)
-			//        (botao as RadioButton).Checked = false;
-
-			//txtLeitorComLivro.Text = "000000";
-			//txtDataDevolucao.Text = "";
-			//txtNomeLeitor.Text = "";
 		}
 
 		private void btnInicio_Click(object sender, EventArgs e)
@@ -145,14 +113,17 @@ namespace ProjetoII
 			btnSalvar.Enabled = true;
 			txtDica.Enabled = true;
 			txtPalavra.Enabled = true;
-			//stlbMensagem.Text = "Edite os campos desejados e pressione [Salvar]";
 		}
 
 		private void btnExcluir_Click(object sender, EventArgs e)
 		{
+			string textoFinal = "";
+			if (asPalavras[asPalavras.PosicaoAtual].DicaTexto.Remove(25).Trim() != asPalavras[asPalavras.PosicaoAtual].DicaTexto.Trim())
+				textoFinal = "...";
+
 			if (MessageBox.Show($"Deseja excluir esse registro?{Environment.NewLine}{Environment.NewLine}" +
 				$"Palavra: {asPalavras[asPalavras.PosicaoAtual].PalavraTexto}{Environment.NewLine}" +
-				$"Dica: {asPalavras[asPalavras.PosicaoAtual].DicaTexto.Remove(25).Trim()}...", "Exclusão", MessageBoxButtons.YesNo,
+				$"Dica: {asPalavras[asPalavras.PosicaoAtual].DicaTexto.Remove(25).Trim()}{textoFinal}", "Exclusão", MessageBoxButtons.YesNo,
 				MessageBoxIcon.Warning) == DialogResult.Yes)
 			{
 				asPalavras.Excluir(asPalavras.PosicaoAtual);
