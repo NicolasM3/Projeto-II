@@ -122,7 +122,7 @@
 			this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
 			this.btnAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnAnterior.Name = "btnAnterior";
-			this.btnAnterior.Size = new System.Drawing.Size(41, 35);
+			this.btnAnterior.Size = new System.Drawing.Size(42, 35);
 			this.btnAnterior.Text = "Voltar";
 			this.btnAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -250,7 +250,9 @@
             this.Palavra,
             this.Dica});
 			this.dgvPalavra.Location = new System.Drawing.Point(14, 142);
+			this.dgvPalavra.MultiSelect = false;
 			this.dgvPalavra.Name = "dgvPalavra";
+			this.dgvPalavra.ReadOnly = true;
 			this.dgvPalavra.Size = new System.Drawing.Size(753, 235);
 			this.dgvPalavra.TabIndex = 6;
 			this.dgvPalavra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPalavra_CellClick);
@@ -261,12 +263,14 @@
 			this.Indice.DefaultCellStyle = dataGridViewCellStyle1;
 			this.Indice.HeaderText = "#";
 			this.Indice.Name = "Indice";
+			this.Indice.ReadOnly = true;
 			this.Indice.Width = 50;
 			// 
 			// Palavra
 			// 
 			this.Palavra.HeaderText = "Palavra";
 			this.Palavra.Name = "Palavra";
+			this.Palavra.ReadOnly = true;
 			this.Palavra.Width = 150;
 			// 
 			// Dica
@@ -274,6 +278,7 @@
 			this.Dica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.Dica.HeaderText = "Dica";
 			this.Dica.Name = "Dica";
+			this.Dica.ReadOnly = true;
 			// 
 			// Form2
 			// 
